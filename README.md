@@ -5,3 +5,5 @@ The tutorial for guiding one through the Validate workflow:
 * [Simulate](docs/Simulate.md)
 * *GWAS Tools*
   * [FaST-LMM](FaST-LMM Docs.md)
+* [Winnow](docs/Winnow.md)
+* [Demonstrate](docs/Demonstrate.md)
