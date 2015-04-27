@@ -6,4 +6,24 @@ the validity of the GWAS tool and whether or not it was truly useful in analyzin
 
 ###Winnow Guide
 
-On the _Validate Workflow v0.5_  
+On the _Validate Workflow v0.5_ Atmosphere instance, the main Winnow program, `winnow.py`, is located in the `/usr/bin` directory along with its modules. To see all of the possible options, type this command into the terminal/command line:
+
+`python winnow.py --help`
+
+Though there are quite a few possible options, the following are the only _required_ arguments: 
+* **--Folder** (or **-F**) which denotes the folder of aggregated GWAS results
+* **--Class** (or **-C**) to specify the “known-truth” file
+* **--Snp** (or **-S**) to specify a string/name for the SNP column in the input file
+* **--Score** (or **-P**) to specify a string/name for the name of the scoring column in results file (e.g., P-value)
+* **--filename** (or **-f**) to specify the desired filename for the Validate output file (without file extension); defaults to Results.txt as output filename
+* **--kttype** (or **-k**) to specify the type of known-truth file for --class (either OTE or FGS, see below for more details)
+
+Other possible arguments include:
+* **--analysis** (or **-a**) to specify the type of analysis, “GWAS” or “prediction” (currently, only GWAS is available and if left blank, Winnow assumes GWAS)
+* **--threshold** (or **-t**) to specify a desired threshold for classification metrics where necessary (default is 0.05)
+* **--verbose** (or **-v**) to trigger verbose mode
+* **--seper** (or **-s**) to indicate how values are separated in the output file (comma or whitespace)
+* **--kttypeseper** (or **-r**) to specify the delimination in the known-truth file (comma or whitespace)
+* **--beta** (or **-b**) to specify a string for the name of the estimated SNP effect column in results folder
+
+For the --kttype argument, the two possible options are "OTE" or "FGS." The "OTE" format represents "Only Truth and Effect," meaning that only those SNPs with significant effects along with the effect size of those significant SNPs are included in the known-truth file. The "FGS" format means "Full Genome Set," meaning that all SNPs and effects are included.  
