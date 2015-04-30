@@ -8,3 +8,6 @@ The tutorial for guiding one through the Validate workflow:
   * [FaST-LMM](FaST-LMM Docs.md)
 * [Winnow](docs/Winnow.md)
 * [Demonstrate](docs/Demonstrate.md)
+* [Installing your functions](docs/Your functions.md)
+* [Installing your simulations](docs/Your sims.md)
+* [Further Winnow development](docs/Winnow develop.md)
