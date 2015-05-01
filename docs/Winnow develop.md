@@ -38,7 +38,7 @@ You will also need to understand the following five objects from the program to 
 
 Adding an additional fit statistic to the list of outputs is fortunately very straightforward. As a basic example, if we wanted to include a correlation value:
 
-1) No sense in reinventing the wheel here, we can import the function from an existing Python package: 
+1) No sense in reinventing the wheel here. We can import the function from an existing Python package: 
 `from scipy import stats`
 
 2) Now we implement it in relation to our objects. This will take place in the `performetrics.py` file. 
