@@ -10,6 +10,9 @@ Unless you already have simulation data stored or uploaded onto your instance, y
 * **Number of generations to evolve:** `-g` or `--gen`
 * **Genetic recombination rate:** `-r` or `--rate` (decimal value between 0 and 1)
 * **Output file name:** `-f` or `--filename`
+* **Distribution:** `-d` Two options: 0 for normal, 1 for gamma. If the gamma distribution is chosen, you will also need the following arguments for parameters (normal distribution parameters are derived in-program):
+  * **Parameter 1:** `-p1` represents the _alpha_ or _shape_ parameter of your gamma distributed population; can be floating point number or integer
+  * **Parameter 2:** `-p2` represents the _beta_ or _scale_ parameter of your gamma distributed population; can also be a floating point number or integer 
 
 *If you wish to use more than one argument for these options, separate them by commas with no spaces.
 
