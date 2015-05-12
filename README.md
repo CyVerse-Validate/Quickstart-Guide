@@ -5,7 +5,7 @@ The tutorial for guiding one through the Validate workflow:
 * [Accessing Stampede](docs/Validate on Stampede.md)
 * [Simulate](docs/Simulate.md)
 * *GWAS Tools*
-  * [FaST-LMM](FaST-LMM Docs.md)
+  * [FaST-LMM](docs/FaST-LMM Docs.md)
 * [Winnow](docs/Winnow.md)
 * [Demonstrate](docs/Demonstrate.md)
 * [Installing your functions](docs/Your functions.md)
