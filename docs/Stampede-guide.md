@@ -80,7 +80,7 @@ The format of the JSON file looks much like other Javascript files with emphasis
 A sample JSON description, then, [may look like this.](https://github.com/iPlantCollaborativeOpenSource/iplant-agave-sdk/blob/master/examples/samtools-0.1.19/stampede/samtools-sort.json)
 Though this may be the hardest part of actually making an app, the staff at TACC and iPlant have helped simplify the process by providing an [App Builder](http://agaveapi.co/app-builder/) with real-time updates of your description and a number of templates borrowed from existing applications.
 Once your materials are finished, you may want to test your app on a *private execution system.* Because public apps must first be vetted by the administrators, you will want to make sure your app works in the first place. This is where the private execution system comes in handy.
-Upon installing the Agave API, you should have three private systems already loaded. To see the names of these systems, type `systems-list in the command line. The private ones will be those with your username attached. To see only your private systems, add `-Q` after typing `systems-list`.
+Upon installing the Agave API, you should have three private systems already loaded. To see the names of these systems, type `systems-list` in the command line. The private ones will be those with your username attached. To see only your private systems, add `-Q` after typing `systems-list`.
 
 To run an app on your private execution system, simply change the executionSystem line in your app's JSON description to whatever the name of your private system is. Then, to actually submit the app, type `apps-addupdate -F <path to JSON file>`.
 From there, you can type `apps-list -Q` to verify that the app has been added to your private apps list (for future reference: `-P` indicates public and `-Q` indicates private listings).
@@ -96,23 +96,24 @@ In the event something goes wrong with your job, you can check on it through the
 You may also wish to download or look at certain files from your job output. To list the output, type `jobs-output <insert Job ID here>` and to download a file from the output type `jobs-output --download <insert name of output file here>`.
 
 And that about covers it! You should now be able to navigate the Stampede system and run your own code with little trouble. That said, there are many additional commands and options Stampede has to offer beyond what's listed here.
-**To see the full list of resources on Stampede, check out the official TACC users guide here!**
+**To see the full list of resources on Stampede, check out the [official TACC users guide here!](https://portal.tacc.utexas.edu/user-guides/stampede)**
 
-**Also, if you want a list of all available commands on Stampede under a certain umbrella (like apps or jobs), type `compgen -c <search term here>** 
+**Also, if you want a list of all available commands on Stampede under a certain umbrella (like apps or jobs), type `compgen -c <search term here>` (for example, `compgen -c 'apps' `)** 
 
 ##Using the Workflow on Stampede
 
 While the apps will be available through Agave in the near future, for now you are free to upload them from Github and run through batch processing. To upload from Github, take these steps:
 
 1) Use the `module load git` command to upload the git module onto your login node
+
 2) Clone (i.e. make a copy of) the repository with the source code onto either your work directory or home directory. 
-`Git commit https://github.com/UNCW-iPlant/Validate-Master` will do the trick. 
+`Git clone https://github.com/UNCW-iPlant/Validate-Master` will do the trick. 
 Please note that once the cloning process is done, it will produce a local copy of the Validate-Master repository, along with the source code, in whatever directory you were in when you called the git command.
+
 3) For this, all you would need is the source code in the *Current Release* folder. This is the stable release that is currently available.
-Use the command `cd ./Validate-Master/<folder you want>` to get to the programs in the workflow. You may need to start with Simulate to generate some data, but if you already have your desired data in place,
+Use the command `cd ./Validate-Master/<folder you want>` to get to the programs in the workflow. Please note that for directories with spaces in the name, you will need to include quotes around the directory name. You may need to start with Simulate to generate some data, but if you already have your desired data in place,
 simply move on to the next folder: FaST-LMM. From here, you may move the FaST-LMM executable to be in the same folder with you data or specify the path to your data. 
 Either way, you may run analyses through batch processing and SLURM commands. For more information on the programs and what inputs you could use, [check the Quickstart guide here.](https://github.com/UNCW-iPlant/Quickstart-guide)
 
 Once the apps are available through Agave, you can just submit a job description like the example linked above to get things running. To submit your job description and get a job started, just
 use the `jobs-submit` command corresponding to whatever app you want to run. Make sure you have all of the outputs directed to the right place, along with the links to whatever input you may be using.
-
