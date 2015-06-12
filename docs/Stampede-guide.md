@@ -23,7 +23,7 @@ Some particular differences are outlined below.
 1) **Stampede does not allow for root user access for running commands!** The Stampede cluster hosts thousands of users per day on a not-so-isolated computing environment with high processing power; 
 giving everyone access to the `sudo` command or the ability to log in as a root user would inevitably cause disaster on the machine. Hence, only the administrators have root access to most of the files.
 While you are able to install and change environmental variables for your particular allocation, universal changes are not allowed. By extension, this means that any programming packages or modules 
-(e.g. a Python module or an R package) cannot be installed on a permanent location. These packages can be accessed _on your allocation_, however, by changing the PYTHONPATH environmental variable and installing.
+(e.g. a Python module or an R package) cannot be installed on a permanent location. These packages can be accessed _on your allocation_, however, by changing the PYTHONPATH environmental variable and installing. Furthermore, to gain access to the iPlant Data Store, you will need to request permission from TACC, [ideally using a consulting ticket to contact the administrators.](https://portal.tacc.utexas.edu/tacc-consulting)
 
 2) **Stampede uses SLURM for batch processing in addition to basic Linux commands.** If there's one thing that will get the TACC admins on your case, it's running time-consuming operations on the login node 
 (i.e. your location when you first log in). The login node should only be used for small, basic operations that won't take more than a few minutes. Otherwise the operation will borrow from other compute nodes
