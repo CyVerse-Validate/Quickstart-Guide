@@ -8,7 +8,7 @@ To use the Validate Workflow on Stampede, you will need a few more accounts. Fir
 
 Next, set up an account with the Extreme Science and Engineering Discovery Environment (XSEDE) [through this page.](https://portal.xsede.org/?p_p_id=58&p_p_lifecycle=0&p_p_state=maximized&p_p_mode=view&saveLastPath=0&_58_struts_action=%2Flogin%2Fcreate_account) The only difference among XSEDE account creation and the previous two accounts is that XSEDE does require a .edu address for proper registration. 
 
-Finally, to get access to the Agave API, you must request access to the "iPlant-Collabs" project (this allows you a certain allocation of nodes on Stampede as well). To request access, send a message to support@iplantcollaborative.org. Getting access may take a day or two, but you will know for sure upon trying out Stampede for yourself.
+Finally, to get access to the Agave API, you must request access to the "iPlant-Collabs" project (this allows you a certain allocation of nodes on Stampede as well). To request access, send a message to support@iplantcollaborative.org. Getting access may take a day or two, but you will know for sure upon trying out Stampede for yourself. **Note that you will not immediately receive a notification upon getting access. The only way to know for sure is to try it out!**
 
 #Accessing Stampede
 To access Stampede, you may use a number of different SSH clients, depending on your operating system:
