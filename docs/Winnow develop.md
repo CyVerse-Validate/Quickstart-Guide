@@ -22,7 +22,8 @@ we have included well-known scientific modules in the source code. By doing so, 
 | fileimport.py    | This file provides functions to import data.  Currently, white space and comma delimitation are the only formats supported.                                                            |
 | commandline.py   | This file contains functions for retrieving command line arguments.                                                                                                                    |
 | gwas.py          | This file contains functions for executing analysis of a GWAS,application.  For a prediction application, additional functions will,need to be made.                                   |
-| performetrics.py | This file contains all individualized functions for performance metrics,used in validation of an application.  This is the file we expect will be most heavily modified in the future. |
+| performetrics.py | This file contains all individualized functions for performance metrics,used in validation of an application.  This is the file we expect will be most heavily modified in the future. 
+| adjustments.py   | This file contains all functions for adjusting P-values before running the analysis. |
 
 You will also need to understand the following five objects from the program to effectively modify the code:
 
@@ -43,13 +44,79 @@ Adding an additional fit statistic to the list of outputs is fortunately very st
 
 2) Now we implement it in relation to our objects. This will take place in the `performetrics.py` file. 
 In this case, we would use the betaTrueFalse and betaColumn objects to produce a function like this:
-`def r(betaColumn, betaTrueFalse):
+``` python
+def r(betaColumn, betaTrueFalse):
   betaColumn = np.array(betaColumn)
   betaTrueFalse = np.array(betaTrueFalse)
-  return stats.stats.pearsonr(betaColumn, betaTrueFalse)[0]`
+  return stats.stats.pearsonr(betaColumn, betaTrueFalse)[0]
+```
 
 3) Finally, be sure to include your new function in the list of GWAS functions in the `gwas.py` file. 
 You will need to include the function name—"r" in this case—and the function call—r(betaColumn, betaTrueFalse)—in the file. 
 Remember also that we are only changing the gwaswithBeta function, as we could not analyze a GWAS application that did not include SNP weights.
+
+##Adding a P-value adjustment function
+
+If we wanted to include a Benjamini-Hochberg FDR adjustment:
+
+1) The adjustment functions are located in the `adjustments.py` file.
+
+2) For the BH method, p-values are ordered from largest to smallest and adjusted based on their position or the adjusted value of the previous p-value: whichever is less. The adjusted values are then returned in their original order.
+
+``` python
+def fdr_bh(score_col):
+  # List for p-vals in order from largest to smallest
+  ordered_scores = list()
+  # Copy of list of p-vals so the original is not modified
+  score_col_copy = list(score_col)
+  # List of adjusted p-vals in original order to be returned
+  new_pval = [None] * len(score_col)
+  # Copies the original list of p-vals into score_col_copy as a tuple (p, index(p)) so we can save the original          order
+  for each in score_col_copy:
+      ordered_scores.append((each, score_col_copy.index(each)))
+      # Removes each p-val from the copy list to ensure that indexes are accurate in case of duplicate p-cals
+      score_col_copy[score_col_copy.index(each)] = None
+  # Sorts p-vals smallest to largest, then reverses so they are ordered largest to smallest
+  ordered_scores.sort()
+  ordered_scores.reverse()
+  # Solves for the adjusted p-val of the first (largest) original p-val
+  adjusted = len(ordered_scores)*ordered_scores[0][0]/len(ordered_scores)
+  # Iterates through all ordered p-vals, sets val to the minimum of the previous adjustment and current adjustment
+  for each in ordered_scores:
+      val = min(adjusted, float(len(ordered_scores)) * float(each[0]) /
+                float(len(ordered_scores) - ordered_scores.index(each)))
+      # Sets the index of new_pval(from the tuple in ordered_scores) to the adjusted p-val
+      new_pval[each[1]] = val
+      # Updates the adjusted value so the minimum function will work on the next iteration
+      adjusted = val
+  # Returns the list of adjusted p-vals in the original order
+  return new_pval
+```
+
+3) We then must add fdr_bh into the `winnow.py` file by adding the import `from adjustments import fdr_bh`
+
+4) Lastly you must add your new method to the `adjust_score` function in `winnow.py` 
+
+```python
+  def adjust_score(self, score):
+      if 'pvaladjust' not in self.args_dict.keys():
+          return score
+      elif self.args_dict['pvaladjust'] == 'BH':
+          return fdr_bh(score)
+      # Add other adjustments here
+      else:
+          print 'Currently only BH (Benjamini-Hochberg) is supported, the original P-values will be used'
+          return score
+```
+
+5) You can add other adjustments with an elif statement. For example, you added the BY adjustment function so before `else` you would add:
+
+```python
+elif self.args_dict['pvaladjust'] == 'BY'
+  # Return the function you created
+  return fdr_by(score)
+```
+
+6) You can then use your adjustment in winnow by passing the parameter --pvaladust BY or -p BY; where BY is the value that you set in the above step.
 
 *Definitions and example originally from iPlant wiki page: [A Quick Guide for Further Developing Validate](https://pods.iplantcollaborative.org/wiki/display/docs/A+Quick+Guide+for+Further+Developing+Validate)*
