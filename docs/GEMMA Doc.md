@@ -1,4 +1,4 @@
-**GEMMA**
+#GEMMA
 
 To see all of the possible inputs for GEMMA, simply type this into the terminal:
 
