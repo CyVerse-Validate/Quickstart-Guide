@@ -30,5 +30,3 @@ storage allocations. Beyond that, Agave also allows you to submit analysis jobs 
 fastest supercomputers, Stampede, located at the Texas Advanced Computing Center.
 
 We will cover these subjects a bit later on. For now though, we will take the next step and look at some terminology that may be useful to anyone working with iPlant.
-
-[#Click here to move on to the "Terminology" page!](http://uncw-iplant.github.io/
