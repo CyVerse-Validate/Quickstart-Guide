@@ -4,10 +4,11 @@ The main genome wide association studies tool that we have used, FaST-LMM stands
 *L*inear *M*ixed *M*odels. It is a tool from Microsoft Research designed for analyses of very large data sets, and has been tested on data sets with over 120,000 individuals.
 
 ##Running the Program
-Please note that the original FaST-LMM executable destination is: `/usr/bin/fastlmmc`; thus, the executable can be launched from any directory on the instance. Simply type in `fastlmmc` into the terminal and a help menu will appear. 
 
-With that in mind, the program requires a minimum of three files to function: 1) A PEDMAP set of files, 2) a phenotype file corresponding to the PEDMAP set, 
-and 3) a set of PLink formatted files to compute the genetic similarity matrix decomposition (does not need to be different from number 1).
+With that in mind, the program requires a minimum of three files to function: 
+1) A PEDMAP set of files
+2) a phenotype file corresponding to the PEDMAP set
+3) a set of PLink formatted files to compute the genetic similarity matrix decomposition (does not need to be different from number 1).
 
 The input flags you would use are as follows:
 * **-file :** Denotes the file name for the PLINK .ped/.map files
@@ -24,4 +25,3 @@ These are the bare minimum options needed to run FaST-LMM; however, some other o
 
 An example of executing the FaST-LMM program might look like so:
 `fastlmmc -verboseOutput -bfile toydata -pheno toydata.phe.txt -covar toydata.covar.txt -out MyResults.csv`
-
