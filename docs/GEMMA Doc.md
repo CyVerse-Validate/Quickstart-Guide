@@ -20,7 +20,7 @@ These file options indicate:
 
     gemma -g <filename> -p <filename> -gk <num> -o <output prefix>
 
-These file options indicate...
+These file options indicate:
 
 * **-g:** A character string. Indicates the mean genotype file in your set. The full name, including extension, is required.
 * **-p:** A character string. Indicates the phenotype file for your set. Again, the full name is required.
@@ -34,6 +34,7 @@ Now that you have a relatedness matrix, you can use that file in either a univar
 
     gemma -bfile <fileset name/prefix> -k <filename> -lmm <num, 1-4> -o <output prefix>
 
+These file options indicate:
 
 * **-bfile:** A character string.The PLINK binary file set name. Like previously, only the prefix is required; do not type any of the extensions in for this option
 * **-k:** A character string. The name of the previously calculated relatedness matrix file. Full name, including file extension, is required.
@@ -45,6 +46,8 @@ Once the analysis is complete, check the output folder in your current directory
 <br>**Similarly, for running the univariate mixed model with the BIMBAM formatted data, the terminal commands will look like this:**</br>
 
     gemma -g <filename> -p <filename> -a <filename> -k <filename> -lmm <num, 1-4> -o <output prefix>
+
+These file options indicate:
 
 * **-g:** Character string; the mean genotype file for your fileset. The full filename, including extension, is required
 * **-p:** Character string; the phenotype file for your set. Again, the full name is required.
