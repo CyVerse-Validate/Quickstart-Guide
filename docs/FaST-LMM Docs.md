@@ -5,7 +5,10 @@ The main genome wide association studies tool that we have used, FaST-LMM stands
 
 ##Running the Program
 
-With that in mind, the program requires a minimum of three files to function: <br>1) A PEDMAP set of files</br><br>2) a phenotype file corresponding to the PEDMAP set </br><br>3) a set of PLink formatted files to compute the genetic similarity matrix decomposition (does not need to be different from number 1).</br>
+With that in mind, the program requires a minimum of three files to function: 
+1. A PEDMAP set of files
+2. A phenotype file corresponding to the PEDMAP set
+3. A set of PLink formatted files to compute the genetic similarity matrix decomposition. This does not need to be different from number 1. 
 
 The input flags you would use are as follows:
 * **-file :** Denotes the file name for the PLINK .ped/.map files
