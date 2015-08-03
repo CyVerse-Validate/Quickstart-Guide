@@ -11,10 +11,10 @@ On the _Validate Workflow v0.5_ Atmosphere instance, the main Winnow program, `w
 `python winnow.py --help`
 
 Though there are quite a few possible options, the following are the only _required_ arguments: 
-* **--Folder** (or **-F**) which denotes the folder of aggregated GWAS results
-* **--Class** (or **-C**) to specify the “known-truth” file
-* **--Snp** (or **-S**) to specify a string/name for the SNP column in the input file
-* **--Score** (or **-P**) to specify a string/name for the name of the scoring column in results file (e.g., P-value)
+* **--folder** (or **-F**) which denotes the folder of aggregated GWAS results
+* **--class** (or **-C**) to specify the “known-truth” file
+* **--snp** (or **-S**) to specify a string/name for the SNP column in the input file
+* **--score** (or **-P**) to specify a string/name for the name of the scoring column in results file (e.g., P-value)
 * **--filename** (or **-f**) to specify the desired filename for the Validate output file (without file extension); defaults to Results.txt as output filename
 * **--kttype** (or **-k**) to specify the type of known-truth file for --class (either OTE or FGS, see below for more details)
 
@@ -25,5 +25,7 @@ Other possible arguments include:
 * **--seper** (or **-s**) to indicate how values are separated in the output file (comma or whitespace)
 * **--kttypeseper** (or **-r**) to specify the delimination in the known-truth file (comma or whitespace)
 * **--beta** (or **-b**) to specify a string for the name of the estimated SNP effect column in results folder
+* **--pvaladjust** (or **-p**) to specify the type of P-value adjustment (Currently only BH is supported)
+* **--savep** (or **-o**) to save a file containing the SNP ID, P-value, and the adjusted P-value if applicable
 
 For the --kttype argument, the two possible options are "OTE" or "FGS." The "OTE" format represents "Only Truth and Effect," meaning that only those SNPs with significant effects along with the effect size of those significant SNPs are included in the known-truth file. The "FGS" format means "Full Genome Set," meaning that all SNPs and effects are included.  
