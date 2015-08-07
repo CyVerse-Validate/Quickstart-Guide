@@ -1,10 +1,9 @@
-(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)
+#Qxpak v.5
 
-Qxpak v.5
+*(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)*
 
-"Qxpak is a package for versatile statistical genomics, specifically designed for sophisticated quantitative trait loci and association analyses. Multiple loci, multiple trait, infinitesimal genetic effects, imprinting, epistasis or sex linked loci can be fitted. The new version (v. 5) allows us, among other new features, to include either relationship matrices obtained with molecular information or user defined matrices that can be read from an input file. This feature can be used for genome selection or - more importantly - to correct for population structure in association studies. In crosses, two parental lines, not necessarily inbred, can be accommodated"
 
--Qxpak manual. 
+>Qxpak is a package for versatile statistical genomics, specifically designed for sophisticated quantitative trait loci and association analyses. Multiple loci, multiple trait, infinitesimal genetic effects, imprinting, epistasis or sex linked loci can be fitted. The new version (v. 5) allows us, among other new features, to include either relationship matrices obtained with molecular information or user defined matrices that can be read from an input file. This feature can be used for genome selection or - more importantly - to correct for population structure in association studies. In crosses, two parental lines, not necessarily inbred, can be accommodated --<cite>[QxPak Manual](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)</cite>
 
 ###**Inputs**
 Qxpak normally requires four files: 
