@@ -18,7 +18,7 @@ The file formats PLINK uses for genotype data fall into several different groups
 
 * **PED/MAP files:** Standard files with .ped and .map extensions detailing the genotype information of an individual or a group of individuals. 
 The PED file is delimited by spaces or tabs, and the first six columns of a PED file must correspond to the following: 
-*Family ID*,*Individual ID*,*Paternal ID*,*Maternal ID*,*Sex*, and *Phenotype.* The MAP file is a description of each genetic marker, and this file must have exactly 4 columns:
+*Family ID*, *Individual ID*, *Paternal ID*, *Maternal ID*, *Sex*, and *Phenotype.* The MAP file is a description of each genetic marker, and this file must have exactly 4 columns:
 *Chromosome*, *SNP ID*, *Genetic distance (in morgans)*, and *Base-pair position*.
 
 To run PED/MAP format files, use this command:
