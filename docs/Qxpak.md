@@ -66,7 +66,7 @@ Z files contain the IDB probabilities or SNP configurations.
 There are numerous other undocumented output files.
 
 ###**Wrapper Script**
-There is also a wrapper script available on the iplant wiki page, link.
+There is also a wrapper script available [here](https://pods.iplantcollaborative.org/wiki/download/attachments/8406442/qxpakwrapper.py?version=1&modificationDate=1341604484000&api=v2) and also linked on the Qxpak [wikipage](https://pods.iplantcollaborative.org/wiki/display/DEapps/Qxpak).
 This allows the user to write in the parameters directly into the command line without having to edit the parameter file repeatedly. 
 
 |      ________  |                |
