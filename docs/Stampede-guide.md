@@ -17,7 +17,7 @@ Also, using Stampede requires at least a basic familiarity with Linux commands a
 
 While the Stampede shell *does* operate under a Linux operating system (OS) and runs bash commands, Stampede is slightly different from a typical Linux terminal.
 How so? In one sense, Stampede has many capabilities beyond what a typical Linux shell can do since it is essentially a large compute cluster rather than a standalone computer; 
-however, Stampede is also run by a set of administrators, so it is not an entirely isolated computing environment like the [iPlant Collaborative's Atmosphere computing environment]() is.
+however, Stampede is also run by a set of administrators, so it is not an entirely isolated computing environment like the iPlant Collaborative's Atmosphere computing environment is. 
 Some particular differences are outlined below.
 
 1) **Stampede does not allow for root user access for running commands!** The Stampede cluster hosts thousands of users per day on a not-so-isolated computing environment with high processing power; 
@@ -25,27 +25,41 @@ giving everyone access to the `sudo` command or the ability to log in as a root 
 While you are able to install and change environmental variables for your particular allocation, universal changes are not allowed. By extension, this means that any programming packages or modules 
 (e.g. a Python module or an R package) cannot be installed on a permanent location. These packages can be accessed _on your allocation_, however, by changing the PYTHONPATH environmental variable and installing. Furthermore, to gain access to the iPlant Data Store, you will need to request permission from TACC, [ideally using a consulting ticket to contact the administrators.](https://portal.tacc.utexas.edu/tacc-consulting)
 
-2) **Stampede uses SLURM for batch processing in addition to basic Linux commands.** If there's one thing that will get the TACC admins on your case, it's running time-consuming operations on the login node 
+2) **Stampede uses SLURM for batch processing in addition to basic Linux commands.** Information about SLURM can be found [here](https://computing.llnl.gov/linux/slurm/). If there's one thing that will get the TACC admins on your case, it's running time-consuming operations on the login node 
 (i.e. your location when you first log in). The login node should only be used for small, basic operations that won't take more than a few minutes. Otherwise the operation will borrow from other compute nodes
 to complete, and everyone else's performance will suffer. If you have a job or operation that will take a longer time (say, several hours or a day), then you will want to run a batch job using SLURM. 
-To run a batch job, create a shell script with your necessary commands and at the top, write a header like the one below to show SLURM how to run your job:
+To run a batch job, create a shell script with your necessary commands and at the top, write a header like the example below, with your own parameters, to show SLURM how to run your job:
 
->``#!/bin/bash`				  # tells Stampede this is a command for the bash shell
->`#SBATCH -J myMPI`           # job name
->`#SBATCH -o myMPI.o%j`       # output and error file name (%j expands to jobID)
->`#SBATCH -n 32`              # total number of mpi tasks requested
->`#SBATCH -p development`     # queue (partition) -- normal, development, etc.
->`#SBATCH -t 01:30:00`        # run time (hh:mm:ss) - 1.5 hours
->`#SBATCH --mail-user=username@tacc.utexas.edu`
->`#SBATCH --mail-type=begin`  # email me when the job starts
->`#SBATCH --mail-type=end`    # email me when the job finishes
->`ibrun ./a.out              # run the MPI executable named a.out
+    #!/bin/bash
+    #SBATCH -J myMPI
+    #SBATCH -o myMPI.o%j
+    #SBATCH -n 32
+    #SBATCH -p development
+    #SBATCH -t 01:30:00
+    #SBATCH --mail-user=username@tacc.utexas.edu
+    #SBATCH --mail-type=begin
+    #SBATCH --mail-type=end
+    ibrun ./a.out
+
+|      ___  |                |
+|:----------|:-------------  |
+| `#!/bin/bash` |tells Stampede this is a command for the bash shell|
+|`#SBATCH -J myMPI`|job name|
+|`#SBATCH -o myMPI.o%j`|output and error file name (%j expands to jobID)|
+|`#SBATCH -n 32`|total number of mpi tasks requested|
+|`#SBATCH -p development`|queue (partition) -- normal, development, etc.|
+|`#SBATCH -t 01:30:00`|run time (hh:mm:ss) - 1.5 hours|
+|`#SBATCH --mail-user=username@tacc.utexas.edu`|specifies your email|
+|`#SBATCH --mail-type=begin`|email me when the job starts|
+|`#SBATCH --mail-type=end`|email me when the job finishes|
+|`ibrun ./a.out`|run the MPI executable named a.out|
+
 
 This header will give the computer additional options beyond simply running your job and returning the output. Please keep in mind that because SLURM batch processing is available to everyone, your job may not be started immediately.
 If you wish to see where your job is regarding priority and progress, type `squeue -U <your TACC username>`. Another command for running a simple command through SLURM is the `srun` command. Again, this command is more useful for one-time executions
-when the login node may not be appropriate. All SLURM commands have a usage menu that can be accessed by typing `<slurm command> -h`.
+when the login node may not be appropriate. Each SLURM command has a usage menu that can be accessed by typing `<specific slurm command> -h`.
 
-3) **Stampede also has Agave apps and modules available.** By using the Agave API and additional modules in conjunction with the cluster, Stampede can extend its functionality to include a number of user-made programs for research.
+3) **Stampede also has Agave apps and modules available.** By using the Agave API and additional modules in conjunction with the cluster, Stampede can extend its functionality to include a number of user-made programs for research. More information about the Agave API can be found in this [repository](https://github.com/iPlantCollaborativeOpenSource/iplant-agave-sdk) 
 Regarding modules, Stampede supports scientific distributions of some popular programming languages including Python, R, and MATLAB (the MATLAB software includes a "bring your own license" usage model).
 To see the modules you currently have installed, just type `module list`, and a numbered list of *Currently Loaded Modules* will appear. If you want to search for a particular module, you can use
 the `module spider` command to do so. For example, if you wish to search for a particular Python version, type `module spider python`. Some particularly useful modules include:
