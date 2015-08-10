@@ -22,10 +22,10 @@ The PED file is delimited by spaces or tabs, and the first six columns of a PED 
 *Chromosome*, *SNP ID*, *Genetic distance (in morgans)*, and *Base-pair position*.
 
 To run PED/MAP format files, use this command:
-`plink --file <dataset name, sans extension>`
+`plink --file <dataset name sans extension>`
 
 Alternatively, if the PED and MAP files have different names, use these commands:
-`plink --ped <PED file> --map <MAP file>
+`plink --ped <PED file> --map <MAP file>`
 
 If certain columns of the PED files are missing, the flags `--no-parents`, `--no-sex`, and `--no-pheno` may be used to denote PED files without the paternal and maternal IDs, sex, or phenotype respectively.
 
