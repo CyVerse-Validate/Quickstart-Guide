@@ -1,5 +1,9 @@
 #GEMMA
 
+*(Links to the user manual, and another tutorial are available at the bottom of this page)*
+
+>GEMMA  is  the  software  implementing  the  *G*enome-wide  *E*fficient  *M*ixed  *M*odel  *A*ssociation algorithm for  a  standard  linear  mixed  model  and  some  of  its  close  relatives  for  *G*enome-*W*ide *A*ssociation *S*tudies (GWAS). It fits a univariate *L*inear *M*ixed *M*odel (LMM) for marker association tests with a single phenotype to account for population stratification and sample structure, and for estimating the proportion of variance in phenotypes explained (PVE) by typed genotypes (i.e. "chip heritability").  It fits a multivariate linear mixed model (mvLMM) for testing marker associations with multiple phenotypes simultaneously while controlling for population stratification, and for estimating genetic correlations among complex phenotypes. It fits a Bayesian sparse linear mixed model (BSLMM) using Markov chain Monte Carlo (MCMC) for estimating PVE by typed genotypes, predicting phenotypes, and identifying associated markers by jointly modeling all markers while controlling for population structure.  It is computationally efficient for large scale GWAS and uses freely available open-source numerical libraries--<cite>[GEMMA user manual](http://www.xzlab.org/software/GEMMAmanual.pdf)</cite>
+
 To see all of the possible inputs for GEMMA, simply type this into the terminal:
 
     gemma -h
@@ -60,5 +64,7 @@ For the multivariate mixed model, the only additional command line argument requ
 
 * **-n:** One or more integers separated by spaces; indicates which phenotype values in the phenotype file (whether PLINK binary or BIMBAM format) are included in the association analysis.
 
-
+####**Additional information** 
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/atmman/Validate+Workflow+v0.7#ValidateWorkflowv0.7-GEMMA)<br></br>
+[User Manual](www.xzlab.org/software/GEMMAmanual.pdf)<br></br>
 
