@@ -1,6 +1,8 @@
 #Setting up your Accounts
 
-Before you can get started analyzing your GWAS tools, you will need to set up a few accounts to get access to all the necessary platforms. First, and most importantly, you will need an iPlant Collaborative account which can be obtained [here.](https://user.iplantcollaborative.org/register/) Please note that iPlant account creation requires some kind of affiliation with a university or company to be completed.
+Before you can get started analyzing your GWAS tools, you will need to set up a few accounts to get access to all the necessary platforms. These accounts, tools, and functions will be explained in more detail later on. For now it is important that the accounts be setup that way you can access the features we talk about later on. 
+
+First, and most importantly, you will need an iPlant Collaborative account which can be obtained [here.](https://user.iplantcollaborative.org/register/) Please note that iPlant account creation requires some kind of affiliation with a university or company to be completed.
 
 Now that you have created an iPlant account, you have access to both the Data Store and the Discovery Environment! As the name implies, the Data Store is the recommended place to hold most of your data, as each personal folder can hold up to 100 GB by default. If you need more space, you may fill out [this form](http://www.iplantcollaborative.org/content/request-data-store-allocation-increase) to get a personal folder increase of up to 1 TB. From here, you will want to request access to the Atmosphere cloud computing services. To do so, simply email support@iplantcollaborative.org.
 
