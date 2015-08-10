@@ -108,6 +108,6 @@ For both of these options, the standard columns in the output files will be the 
 
 Any of these analyses outputs may be run through Winnow and therefore are compatible with the rest of the Validate Workflow (so long as a known-truth file is available as well).
 
-* Quoted from the original [PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)
+*Quoted from the original [PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)
 
 [Sample data (WARNING: Very large datasets!)](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE)
