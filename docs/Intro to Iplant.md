@@ -29,4 +29,4 @@ software and a number of options depending on your need of memory, processors, a
 storage allocations. Beyond that, Agave also allows you to submit analysis jobs through existing applications or develop your own application to share with others. The entirety of the Agave system is powered by one of the world's
 fastest supercomputers, Stampede, located at the Texas Advanced Computing Center.
 
-We will cover these subjects a bit later on. For now though, we will take the next step and look at some terminology that may be useful to anyone working with iPlant.
+We will cover these subjects a bit later on. For now though, we will take the next step and look at how to get started with atmosphere, stampede, and our workflow.
