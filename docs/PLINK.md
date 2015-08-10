@@ -1,10 +1,10 @@
 #PLINK: An Open-Source Whole Genome Association Analysis Toolset
 
-*(Links to sample data and the original documentation are available at the bottom of this page)*
+*(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)*
 
 -----------
 
-PLINK is a popular bioinformatics tool designed "for basic, large-scale analyses in a computationally efficient manner.*" 
+>PLINK is a popular bioinformatics tool designed "for basic, large-scale analyses in a computationally efficient manner."--<cite>[PLINK documentation](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)</cite> 
 In the context of the Validate Workflow, PLINK is useful for handling both linear and logistic regression models and for file format conversion. 
 Though PLINK's analysis algorithms may not be quite as thorough as other mixed model software's, 
 it is a versatile GWAS (genome wide association studies) tool for handling dosage analysis, genotype-environment interactions, epistasis, and data management.
@@ -108,6 +108,6 @@ For both of these options, the standard columns in the output files will be the 
 
 Any of these analyses outputs may be run through Winnow and therefore are compatible with the rest of the Validate Workflow (so long as a known-truth file is available as well).
 
-*Quoted from the original [PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)
-
-[Sample data (WARNING: Very large datasets!)](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE)
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/DEapps/PLINK)<br></br>
+[PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)<br></br>
+[Sample data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE) (WARNING: Very large datasets)
