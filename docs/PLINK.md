@@ -4,7 +4,7 @@
 
 -----------
 
->PLINK is a popular bioinformatics tool designed "for basic, large-scale analyses in a computationally efficient manner."--<cite>[PLINK documentation](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)</cite> 
+>PLINK is a popular bioinformatics tool designed, "for basic, large-scale analyses in a computationally efficient manner."--<cite>[PLINK documentation](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)</cite> 
 In the context of the Validate Workflow, PLINK is useful for handling both linear and logistic regression models and for file format conversion. 
 Though PLINK's analysis algorithms may not be quite as thorough as other mixed model software's, 
 it is a versatile GWAS (genome wide association studies) tool for handling dosage analysis, genotype-environment interactions, epistasis, and data management.
