@@ -23,9 +23,11 @@ Standard files with .ped and .map extensions detailing the genotype information 
 *Chromosome*, *SNP ID*, *Genetic distance (in morgans)*, and *Base-pair position*.
 
 To run PED/MAP format files, use this command:
+
   `plink --file <dataset name sans extension>`
 
 Alternatively, if the PED and MAP files have different names, use these commands:
+
   `plink --ped <PED file> --map <MAP file>`
 
 If certain columns of the PED files are missing, the flags `--no-parents`, `--no-sex`, and `--no-pheno` may be used to denote PED files without the paternal and maternal IDs, sex, or phenotype respectively.
@@ -38,6 +40,7 @@ The BIM and FAM files, however, are still readable in a standard text editor. Th
 The FAM file is merely the first six columns of the PED file, and as such displays the mandatory information detailed above.
 
 To run BED/BIM/FAM files, use this commmand:
+
   `plink --bfile <binary dataset name, sans extension>`
 
 ####**TPED/TFAM files** 
@@ -47,11 +50,13 @@ The first 4 columns of a TPED file are the same as a standard 4-column MAP file.
 The TFAM file, like the standard FAM file, is just the first six columns of a standard PED file.
 
 To run the TPED/TFAM files, use this command:
+
   `plink --tfile <transposed dataset name, sans extension>`
 
 Note that some or all of these file extensions are also usable with other genome wide association studies tools in the Validate Workflow (e.g. FaST-LMM, GEMMA). 
 
 In some cases, PLINK also supports covariates in a given dataset. A covariate file should be formatted with three columns: *Family ID*, *Individual ID*, and *covariate value*. To load said covariate file, type in the command line like so:
+
   `plink --file <dataset> --covar <covariate file, plus extension>`
 
 ##File Format Conversion
@@ -62,15 +67,19 @@ Fortunately, PLINK is very efficient in this regard, and even extremely large da
 Assuming that you are starting with the standard PED/MAP format, data may be converted into binary format with the command 
 
   `plink --file <dataset name> --make-bed`. 
+
 The default output name for the new BED/BIM/FAM files will be *plink*; however, the output name can be changed by instead running 
 
   `plink --file <dataset name> --out <new binary name> --make-bed`
+
 This `--out` option for specifying the new file name may be used with any other type of PLINK file conversion or operation done from the command line. 
 
 To instead create transposed datasets, run the command:
+
   `plink --file <dataset name> --transpose`
 
 Finally, to convert a binary or transposed file set back to its original PED/MAP format, add the --recode option to the command line like so:
+
   `plink --bfile or --tfile <dataset name> --recode --out <new dataset name>`
 
 ##Data Analysis
@@ -78,7 +87,9 @@ Finally, to convert a binary or transposed file set back to its original PED/MAP
 PLINK is also capable of running many types of basic quantitative analyses including epistasis, dosage analysis, and meta-analysis. For the purposes of this tutorial, however, we will only focus on the three algorithms for quantitative trait association.<br></br> 
 **First**<br></br>
 The standard quantitative trait association analysis may be called using the command 
+
   `plink --file <dataset> --assoc --out <output name>` 
+
 This command will create a new file titled based on whatever name you specified in the command (will be called plink by default). 
 Regardless of your chosen file name, the file extension will be *.qassoc* and it will have the following columns:
 
@@ -102,12 +113,16 @@ for confidence intervals with each value (`--ci <decimal number between 0 and 1>
 
 **linear regression models**<br></br>
 To run a linear regression model, type the command like so:
+
   `plink --file <dataset name> --out <output name> --linear` 
+
 This will generate an *.assoc.linear* file with the name specified. 
 
 **logistic regression models**<br></br>
 to run a logistic regression model, type 
+
   `plink --file <dataset name> --out <output name> --logistic`
+
 This command will generate an *.assoc.logistic* file with the output name you specified.
 For both of these options, the standard columns in the output files will be the following:
 
