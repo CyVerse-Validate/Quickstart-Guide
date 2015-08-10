@@ -8,6 +8,8 @@ What is a cyberinfrastructure?
 >not otherwise possible.
 >--<cite>[University of Indiana Knowledge Base](https://kb.iu.edu/d/auhf)</cite>
 
+Iplant has it own youtube [channel](https://www.youtube.com/user/iPlantCollaborative) and posts instructional videos on all of it's features. Once a month there is an hour long online introductory seminar which explains how to use Iplant to new users, these seminars are then posted onto [youtube](https://www.youtube.com/watch?v=9s5YY2-Mb5E)(this one is from July 2015), or you can follow along when they are [scheduled](http://www.iplantcollaborative.org/blog/events) 
+
 Put simply, iPlant provides the space and processing power necessary for the large-scale data analyses that biologists and other life scientists often use in their research.
 The iPlant Collaborative is, as the name implies, a collaborative project between several universities around America including the University of Arizona, 
 the Texas Advanced Computing Center (TACC) at the University of Texas Austin, 
