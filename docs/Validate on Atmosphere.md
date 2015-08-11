@@ -6,4 +6,4 @@ of the Linux terminal commands. If you do not yet or simply want a refresher, pl
 
 Finally, to remotely access individual instances, you will need to download [VNC Viewer software.](http://www.realvnc.com/download/viewer/) Simply choose the option that matches your computer, follow the instructions, and you are ready to begin!
 
-[Back to Read Me](../README.md) | [Next: Accessing Stampede](your Functions.md)
+[Back to Read Me](../README.md) | [Next: Installing your functions](your Functions.md)
