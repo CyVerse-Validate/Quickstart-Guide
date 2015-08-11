@@ -5,3 +5,5 @@ Alright now that you are all set with Atmosphere, there is one other thing we sh
 of the Linux terminal commands. If you do not yet or simply want a refresher, please consult either [this tutorial](http://swcarpentry.github.io/shell-novice/) or [this cheat sheet](http://linoxide.com/guide/linux-cheat-sheet.png) to familiarize yourself. 
 
 Finally, to remotely access individual instances, you will need to download [VNC Viewer software.](http://www.realvnc.com/download/viewer/) Simply choose the option that matches your computer, follow the instructions, and you are ready to begin!
+
+[Back to Read Me](../README.md)|[Next: Accessing Stampede](Stampede-guide.md)
