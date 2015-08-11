@@ -26,4 +26,4 @@ To access Stampede, you may use a number of different SSH clients, depending on 
 ###For Unix/Linux:
 * Terminal: The standard Unix terminal may be used to access Stampede through the *ssh* command.
 
-[Back to Read Me](../README.md)|[Next: Accessing Atmosphere](Validate on Atmosphere.md)
+[Back to Read Me](../README.md) | [Next: Accessing Atmosphere](Validate on Atmosphere.md)
