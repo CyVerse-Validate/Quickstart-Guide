@@ -131,3 +131,5 @@ Either way, you may run analyses through batch processing and SLURM commands. Fo
 
 Once the apps are available through Agave, you can just submit a job description like the example linked above to get things running. To submit your job description and get a job started, just
 use the `jobs-submit` command corresponding to whatever app you want to run. Make sure you have all of the outputs directed to the right place, along with the links to whatever input you may be using.
+
+[Back to Read Me](../README.md) | [Next: Workflow guide](workflow documentation.md)
