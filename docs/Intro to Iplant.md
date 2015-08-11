@@ -32,3 +32,5 @@ storage allocations. Beyond that, Agave also allows you to submit analysis jobs 
 fastest supercomputers, Stampede, located at the Texas Advanced Computing Center.
 
 We will cover these subjects a bit later on. For now though, we will take the next step and look at how to get started with atmosphere, stampede, and our workflow.
+
+[Next: Setting up accounts](Account-setup.md)
