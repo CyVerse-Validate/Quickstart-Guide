@@ -120,3 +120,5 @@ elif self.args_dict['pvaladjust'] == 'BY'
 6) You can then use your adjustment in winnow by passing the parameter --pvaladust BY or -p BY; where BY is the value that you set in the above step.
 
 *Definitions and example originally from iPlant wiki page: [A Quick Guide for Further Developing Validate](https://pods.iplantcollaborative.org/wiki/display/docs/A+Quick+Guide+for+Further+Developing+Validate)*
+
+[Back to Read Me](../README.md)
