@@ -9,4 +9,4 @@ Check the following links for guides to each part of the workflow:
 3. [Winnow](Winnow.md)
 4. [Demonstrate](Demonstrate.md)
 
-[Back to Read Me](../README.md) | [Installing your functions](Your functions.md)
+[Back to Read Me](../README.md) | [Next: Installing your functions](Your functions.md)
