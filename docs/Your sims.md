@@ -46,3 +46,5 @@ in your current directory. From here, use the outputs to your heart's content.
 
 On Stampede, type `module load git` then `git clone <repo URL>` to create a copy of the entire repository in your current directory.
 Ideally, you will want to move everything to your working directory since it has far more storage space than the home directory.
+
+[Back to Read Me](../README.md) | [Next: Further Developing Winnow](Winnow develop.md)
