@@ -75,6 +75,10 @@ These have default settings but can be changed by adding the argument after the 
 * **--structstring** (or **-u**) to secify the structure string found in the input data ("PheHasStruct", "PheNPStruct" _by default_)
 * **--structvalue** (or **-p**) to specify the structure value found in the input data (True, False _by default_)
 
+#####Run Example (Including all plots)
+
+`python demonstrate.py --verbose --dir ~/Documents/DemInputFiles --output ~/Documents/DemOutput --settings ~/Documents/DemInputFiles/winnowoutput.param demonstrate --auctitle AUC --maetitle MAE --heritstrig _03_ _04_ _06_ --heritvalue 0.3 0.4 0.6 --structstring PheHasStruct PheNPStruct --structvalue True False`
+
 ####Demonstrate2
 * **--xpos** (or **-q**) to exclude the True Positives by False Positives plot (not set _by default_)
 * **--postitle** (or **-i**) to specify the True Positives by False Positives plot title ("True Positives by False Positives _by default_)
@@ -85,3 +89,7 @@ These have default settings but can be changed by adding the argument after the 
 * **--aucmax** (or **-b**) to specify maximum axis value for the AUC plot (1.0 _by default_)
 * **--maemin** (or **-n**) to specify minimum axis value for the MAE plot (0 _by default_)
 * **--maemax** (or **-c**) to specify minimum axis value for the MAE plot (2.0 _by default_)
+
+#####Run Example (Including all plots)
+
+`python demonstrate.py --verbose --dir ~/Documents/Dem2InputFiles --output ~/Documents/Dem2Output --settings ~/Documents/Dem2InputFiles/winnowoutput.param demonstrate2 --postitle TPbyFP --errortitle AUCbyMAE --aucmin 0 --aucmax 1.5 --maemin 0 --maemax 2.5`
