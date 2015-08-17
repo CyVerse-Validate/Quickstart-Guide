@@ -70,7 +70,7 @@ These have default settings but can be changed by adding the argument after the 
 * **--auctitle** (or **-t**) to specify the AUC plot title ("Mean AUC by Population Structure and Heritability" _by default_)
 * **--xmae** (or **-m**) to exclude the MAE by Population Structure and Heritability plot (not set _by default_)
 * **--maetitle** (or **-y**) to specify the MAE plot title ("Mean MAE by Population Structure and Heritability" _by default_)
-* **--heritstring** (or **-r**) to specify the heritability string found in the input data ("_03_","_04_","_06_" _by default_)
+* **--heritstring** (or **-r**) to specify the heritability string found in the input data ("\_03_","\_04_","\_06_" _by default_)
 * **--heritvalue** (or **-l**) to specify the heritability value found in the input data (_by default_)
 * **--structstring** (or **-u**) to secify the structure string found in the input data (_by default_)
 * **--structvalue** (or **-p**) to specify the structure value found in the input data (_by default_)
