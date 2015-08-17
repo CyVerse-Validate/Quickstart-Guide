@@ -47,11 +47,22 @@ To see all of the possible options, type this command into the terminal/command 
 
 `python demonstrate.py --help`
 
-Though there are quite a few possible options, the following are the only arguments and needed for both versions of Demonstrate: 
-* **--verbose** (or **-v**) to trigger verbose mode
+Though there are quite a few possible options, the following are the only arguments that are needed for both versions of Demonstrate: 
+* **--verbose** (or **-v**) to trigger verbose mode 
 * **--dir** (or **-d**) which denotes the folder of input files (_required_)
 * **-output** (or **-o**) which denotes the folder to store the output. This is optional and the input folder will be used if this is not specified
 * **-settings** (or **-s**) which denotes the .param file from Winnow containing the settings used to be included on the output plots. This is optional and not used by default
-* **demonstrate** or **demonstrate2** to specify which version of Demonstrate to use
-###Data with Heritability and Population Structure Specified
-###Other data from Winnow
+* **demonstrate** or **demonstrate2** to specify which version of Demonstrate to use (_required_)
+
+To run Demonstrate with only these settings; note the only 2 _required_ settings are **--dir** and the mode
+
+`python demonstrate.py --verbose --dir ~/Documents/DemInputFiles --output ~/Documents/DemOutput --settings ~/Documents/DemInputFiles/winnowoutput.param demonstrate`
+
+`python demonstrate.py --verbose --dir ~/Documents/Dem2InputFiles --output ~/Documents/Dem2Output --settings ~/Documents/Dem2InputFiles/winnowoutput.param demonstrate2`
+
+###Extra Parameters
+
+These have default settings but can be changed by adding the argument after the mode (e.g. after "demonstrate")
+
+####Demonstrate
+####Demonstrate2
