@@ -66,9 +66,9 @@ These have default settings but can be changed by adding the argument after the 
 
 ####Demonstrate
 
-* **--xauc** (or **-a**) to exclude the AUC by Population Structure and Heritability plot
-* **--auctitle** (or **-t**) to specify the AUC plot title
-* **--xmae** (or **-m**) to exclude the MAE by Population Structure and Heritability plot
+* **--xauc** (or **-a**) to exclude the AUC by Population Structure and Heritability plot (not set _by default_)
+* **--auctitle** (or **-t**) to specify the AUC plot title (Mean AUC by Population Structure and Heritability _by default_)
+* **--xmae** (or **-m**) to exclude the MAE by Population Structure and Heritability plot (not set _by default_)
 * **--maetitle** (or **-y**) to specify the MAE plot title
 * **--heritstring** (or **-r**) to specify the heritability string found in the input data
 * **--heritvalue** (or **-l**) to specify the heritability value found in the input data
