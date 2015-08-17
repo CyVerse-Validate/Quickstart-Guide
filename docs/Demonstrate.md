@@ -37,3 +37,21 @@ Assuming all outputs are kept, Demonstrate2 will output five files in total. Fir
 (if multiple Winnow files were in the original directory, the pdf files will have multiple pages). Second, a .csv file detailing the average sensitivity, specificity, and precision of each  
 file. Finally, two plots based on true vs. false positives and mean absolute error vs. area under the curve will be produced. Demonstrate2 will color the points based on the file they came from, so you
 can compare multiple GWAS analysis results on the same plot.
+
+
+#Demonstrate With Python
+
+The Python implementation of Demonstrate works similar to the original program and provides the same output. The most important difference is the syntax to run the program. 
+
+To see all of the possible options, type this command into the terminal/command line from the directory containing demonstrate.py:
+
+`python demonstrate.py --help`
+
+Though there are quite a few possible options, the following are the only arguments and needed for both versions of Demonstrate: 
+* **--verbose** (or **-v**) to trigger verbose mode
+* **--dir** (or **-d**) which denotes the folder of input files (_required_)
+* **-output** (or **-o**) which denotes the folder to store the output. This is optional and the input folder will be used if this is not specified
+* **-settings** (or **-s**) which denotes the .param file from Winnow containing the settings used to be included on the output plots. This is optional and not used by default
+* **demonstrate** or **demonstrate2** to specify which version of Demonstrate to use
+###Data with Heritability and Population Structure Specified
+###Other data from Winnow
