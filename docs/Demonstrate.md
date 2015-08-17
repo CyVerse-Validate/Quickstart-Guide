@@ -50,8 +50,8 @@ To see all of the possible options, type this command into the terminal/command 
 Though there are quite a few possible options, the following are the only arguments that are needed for both versions of Demonstrate: 
 * **--verbose** (or **-v**) to trigger verbose mode 
 * **--dir** (or **-d**) which denotes the folder of input files (_required_)
-* **-output** (or **-o**) which denotes the folder to store the output. This is optional and the input folder will be used if this is not specified
-* **-settings** (or **-s**) which denotes the .param file from Winnow containing the settings used to be included on the output plots. This is optional and not used by default
+* **--output** (or **-o**) which denotes the folder to store the output. This is optional and the input folder will be used if this is not specified
+* **--settings** (or **-s**) which denotes the .param file from Winnow containing the settings used to be included on the output plots. This is optional and not used by default
 * **demonstrate** or **demonstrate2** to specify which version of Demonstrate to use (_required_)
 
 To run Demonstrate with only these settings; note the only 2 _required_ settings are **--dir** and the mode
