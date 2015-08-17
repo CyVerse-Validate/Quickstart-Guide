@@ -13,11 +13,11 @@ original function Demonstrate. To run Demonstrate, type `R` on your terminal or 
 `library(Demonstrate)`
 If nothing happens, then you did it correctly! Now the Demonstrate package is loaded. Here are the options to run the function:
 
-`Demonstrate(dir, settingsfile=NULL, make.AUC.plot=TRUE, AUC.plot.title="Mean AUC By Population Structure and Heritability",
+`Demonstrate(dir, outputdir=NULL, settingsfile=NULL, make.AUC.plot=TRUE, AUC.plot.title="Mean AUC By Population Structure and Heritability",
 	make.MAE.plot=TRUE, MAE.plot.title="Mean MAE By Population Structure and Heritability",herit.strings=list("_03_","_04_","_06_")
 	,herit.values=list(0.3,0.4,0.6),struct.strings=list("PheHasStruct","PheNPStruct"),struct.values=list(TRUE,FALSE))`
 	
-In this function, dir represents the directory where all Winnow output is stored. settingsfile represents the .param file from Winnow and is set to NULL by deafult. If the .param file is given, settings from Winnow will be added to the graphs. These default values are based on the sample data found within this repository. Once run, the function will create two graphs
+In this function, dir represents the directory where all Winnow output is stored and outputdir represents the directory where output will be saved to; by default this is NULL and the input directory is used. settingsfile represents the .param file from Winnow and is set to NULL by deafult. If the .param file is given, settings from Winnow will be added to the graphs. These default values are based on the sample data found within this repository. Once run, the function will create two graphs
 on the mean absolute error (MAE) and area under the receiver operator curve (AUC) across varying levels of heritability and/or population structure.
 The graphs are in pdf format.
 
@@ -29,7 +29,7 @@ Before running it though, you will need to include the function in your global e
 
 Then run the function:
 
-`Demonstrate2(dir, settingsfile=NULL, make.pos.plot=TRUE, pos.plot.title="True Positives by False Positives",
+`Demonstrate2(dir, outputdir=NULL, settingsfile=NULL, make.pos.plot=TRUE, pos.plot.title="True Positives by False Positives",
                        make.error.plot=TRUE, error.plot.title="Plot of AUC by MAE", extra.plots=TRUE, 
                        AUC.axis.min=0, AUC.axis.max=1.0, MAE.axis.min=0, MAE.axis.max=2.0)`
 
