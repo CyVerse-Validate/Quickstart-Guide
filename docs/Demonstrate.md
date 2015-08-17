@@ -67,12 +67,21 @@ These have default settings but can be changed by adding the argument after the 
 ####Demonstrate
 
 * **--xauc** (or **-a**) to exclude the AUC by Population Structure and Heritability plot (not set _by default_)
-* **--auctitle** (or **-t**) to specify the AUC plot title (Mean AUC by Population Structure and Heritability _by default_)
+* **--auctitle** (or **-t**) to specify the AUC plot title ("Mean AUC by Population Structure and Heritability" _by default_)
 * **--xmae** (or **-m**) to exclude the MAE by Population Structure and Heritability plot (not set _by default_)
-* **--maetitle** (or **-y**) to specify the MAE plot title
-* **--heritstring** (or **-r**) to specify the heritability string found in the input data
-* **--heritvalue** (or **-l**) to specify the heritability value found in the input data
-* **--structstring** (or **-u**) to secify the structure string found in the input data
-* **--structvalue** (or **-p**) to specify the structure value found in the input data
+* **--maetitle** (or **-y**) to specify the MAE plot title ("Mean MAE by Population Structure and Heritability" _by default_)
+* **--heritstring** (or **-r**) to specify the heritability string found in the input data ("_03_","_04_","_06_" _by default_)
+* **--heritvalue** (or **-l**) to specify the heritability value found in the input data (_by default_)
+* **--structstring** (or **-u**) to secify the structure string found in the input data (_by default_)
+* **--structvalue** (or **-p**) to specify the structure value found in the input data (_by default_)
 
 ####Demonstrate2
+* **--xpos** (or **-q**) to exclude the True Positives by False Positives plot (not set _by default_)
+* **--postitle** (or **-i**)
+* **--xerror** (or **-e**)
+* **--errortitle** (or **-w**)
+* **--extraplots** (or **-x**)
+* **--aucmin** (or **-z**)
+* **--aucmax** (or **-b**)
+* **--maemin** (or **-n**)
+* **--maemax** (or **-c**)
