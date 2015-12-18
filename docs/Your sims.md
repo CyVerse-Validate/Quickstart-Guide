@@ -1,6 +1,6 @@
 ##Installing your own simulations
 
-Like the other page in this repository regarding [installation of your own functions,](docs/Your functions.md) the Validate Workflow is also adaptable to 
+Like the other page in this repository regarding [installation of your own functions,](Your functions.md) the Validate Workflow is also adaptable to 
 any of your own simulations that you would like to use. 
 To install your own simulations, follow the same steps found on the aforementioned page: upload your source code or executable, change the permissions, and set it to the proper format.
 For simulations, keep in mind that your final file formats must be compatible with whatever analysis tool you are using; 
