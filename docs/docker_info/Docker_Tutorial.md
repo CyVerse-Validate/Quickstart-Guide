@@ -16,6 +16,8 @@ Which is best? Depends on your needs. If you only needs to run individual applic
 
 ### Installing Docker
 
+First, if you are using a Linux OS, your installation instructions for Docker will be slightly different. Consult [the instructions on the official Docker website](https://docs.docker.com/engine/installation/ubuntulinux/) to learn the installation method. Furthermore, you will be able to skip the section on using a Linux virtual machine, and the section on mounting folders to the virtual machine (since you will be running Docker directly on your system).
+
 If you are using either a Windows or Mac OS, you will need to download the Docker Toolbox from [the official website.][toolbox] The Docker Toolbox contains everything necessary to get started using Docker, including:
 
 * **Docker client:** The actual Docker executable that is run on your computer. This is configured by Docker Machine to actually communicate with the host so applications can be run.
@@ -50,7 +52,7 @@ Now that the Docker machine is working, we can try something slightly more advan
 * `/bin/bash` the actual command that will be run on the ubuntu container. The /bin/bash command goes straight to the root directory of the container, where you may navigate through it as you would a typical Linux terminal.
 
 A method for running containers in the background is by using *daemon mode*. To run a container in daemon mode, use the `-d` flag. For example, running a loop in the ubuntu image in daemon mode would look like so:
-`docker run -d ubuntu:latest /bin/sh -c "while true; do echo hello world; sleep 1; done`. The output for this command will be a long string. Where's our normal output? It's actually in this string. This string is actually a container ID for the ubuntu container we've run. Now we can check our active containers with the `docker ps` command, and sure enough, the first container in the list matches the ID we got as output. 
+`docker run -d ubuntu:latest /bin/sh -c "while true; do echo hello world; sleep 1; done"`. The output for this command will be a long string. Where's our normal output? It's actually in this string. This string is actually a container ID for the ubuntu container we've run. Now we can check our active containers with the `docker ps` command, and sure enough, the first container in the list matches the ID we got as output. 
 
 Furthermore, we can look inside the container with the `docker logs` command. Typing in `docker logs <container ID>`, we get a output that looks a lot like this:
 
