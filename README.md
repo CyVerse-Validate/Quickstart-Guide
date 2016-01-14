@@ -8,3 +8,4 @@ The tutorial for guiding one through the Validate workflow:
 * [Installing your Functions](docs/Your functions.md)
 * [Installing your Simulations](docs/Your sims.md)
 * [Further Winnow Development](docs/Winnow develop.md)
+* [Docker Tutorial](docs/docker_info/Docker_Tutorial.md)

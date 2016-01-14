@@ -121,4 +121,4 @@ elif self.args_dict['pvaladjust'] == 'BY'
 
 *Definitions and example originally from iPlant wiki page: [A Quick Guide for Further Developing Validate](https://pods.iplantcollaborative.org/wiki/display/docs/A+Quick+Guide+for+Further+Developing+Validate)*
 
-[Back to Read Me](../README.md)
+[Back to Read Me](../README.md) | [Docker Tutorial](docker_info/Docker_Tutorial.md)
