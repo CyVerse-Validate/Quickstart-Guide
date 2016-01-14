@@ -40,7 +40,7 @@ The first thing to do once logged into the VM is to pull a Docker container. To 
 
 Now that the *hello-world* image has been downloaded, we will need to run it. To do so, just type `docker run hello-world` into the command line. If the run was successful, you should see this:
 
-![hello world](docker-helloworld.jpg)
+![hello world](docker-helloworld.JPG)
 
 Now that the Docker machine is working, we can try something slightly more advanced. Pull the ubuntu image using a similar command: `docker pull ubuntu`. Again, since this image does not exist on the host by default, it will require a few minutes to fully download. Once the image is downloaded, we're going to try something a little different. This time, type `docker run -t -i ubuntu /bin/bash`. Let's break this command down a little bit:
 
@@ -54,7 +54,7 @@ A method for running containers in the background is by using *daemon mode*. To 
 
 Furthermore, we can look inside the container with the `docker logs` command. Typing in `docker logs <container ID>`, we get a output that looks a lot like this:
 
-![logs](docker_logs.jpg)
+![logs](docker_logs.JPG)
 
 ### Containers vs. Images
 
@@ -89,7 +89,7 @@ Note that the actual file path and the alias path are always separated by a colo
 
 Creating a Docker image is fortunately not as hard as you might think it is. The key method for creating a Docker image is by using a file, known as a *Dockerfile*, to run a series of commands for describing and setting up an image. Let's take a look at a basic example of a Dockerfile:
 
-![dockerfile](Dockerfile_pic.jpg)
+![dockerfile](Dockerfile_pic.JPG)
 
 Now let's take a look at some of these commands and what they mean:
 * `FROM`: (optional) An image name and tag. Allows you to use an existing Docker image as a base for the new image. All of the subsequent commands in the file will be commands run on this image
@@ -102,7 +102,7 @@ There are, of course, more commands at your disposal for your Dockerfile, but th
 Once you have your Dockerfile built, save it under just the name *Dockerfile*, **without any file extension!** The Docker client looks only for a file actually named Dockerfile, so if it has an extension, it will produce an error. When the file is done, be sure it is in the same directory with whatever file(s) you wish to copy onto the image. Then, be sure said directory is mounted on the virtual machine and use the `cd` command (for **c**hange **d**irectory) to move to the same directory where the Dockerfile and accompanying files are. Next, type the docker build command:
 `docker build -t <image name> .` The Docker terminal will then start building the image. 
 
-![dockerbuild](dockerbuild.jpg)
+![dockerbuild](dockerbuild.JPG)
 
 Note that each step produces a container ID. This is because Docker has a layered nature in building images. Basically, think a Docker image like a layered cake where each command is like a new layer stacked on top of the foundation of the original image. All of these layers are treated like their own separate intermediate images with their own image IDs. Once all the commands or "layers" of the image are set up, the intermediate images are deleted, leaving only the final image and its final ID. Now you can push it onto Docker Hub for public use.
 
