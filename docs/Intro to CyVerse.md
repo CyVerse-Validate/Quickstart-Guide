@@ -1,6 +1,6 @@
-##What is the iPlant Collaborative?
+##What is CyVerse?
 
-The iPlant Collaborative is a National Science Foundation (NSF) funded program devoted to developing a cyberinfrastructure for life science research. 
+CyVerse is a National Science Foundation (NSF) funded program devoted to developing a cyberinfrastructure for life science research. 
 What is a cyberinfrastructure?
 
 >Cyberinfrastructure consists of computing systems, data storage systems, advanced instruments and data repositories, visualization environments, and people, 
@@ -8,19 +8,19 @@ What is a cyberinfrastructure?
 >not otherwise possible.
 >--<cite>[University of Indiana Knowledge Base](https://kb.iu.edu/d/auhf)</cite>
 
-IPlant has it own [YouTube channel](https://www.youtube.com/user/iPlantCollaborative) and posts instructional videos on all of its features. Once a month there is an hour long online introductory seminar which explains how to use iPlant to new users. These seminars are then posted onto [YouTube](https://www.youtube.com/watch?v=9s5YY2-Mb5E) (this video is from July 2015), or you can follow along when they are [scheduled](http://www.iplantcollaborative.org/blog/events) 
+CyVerse has it own [YouTube channel](https://www.youtube.com/channel/UC-gvdjTz9rq6RovZ57LoDDA) where Cyverse posts instructional videos on all of its features. You can also peruse their [Old Youtube Channel](https://www.youtube.com/user/iPlantCollaborative) for more information.  Once a month there is an hour long online introductory seminar which explains how to use CyVerse to new users. These seminars are then posted onto [YouTube](https://www.youtube.com/watch?v=9s5YY2-Mb5E) (this video is from July 2015), or you can follow along when they are [scheduled](http://www.iplantcollaborative.org/blog/events) 
 
-Put simply, iPlant provides the space and processing power necessary for the large-scale data analyses that biologists and other life scientists often use in their research.
-The iPlant Collaborative is, as the name implies, a collaborative project between several universities around America including the University of Arizona, 
+Put simply, CyVerse provides the space and processing power necessary for the large-scale data analyses that biologists and other life scientists often use in their research.
+The CyVerse Collaborative is, as the name implies, a collaborative project between several universities around America including the University of Arizona, 
 the Texas Advanced Computing Center (TACC) at the University of Texas Austin, 
 the Cold Spring Harbor Laboratory, and the University of North Carolina Wilmington. 
 
-Beyond storage space and computing power, iPlant also provides an open-source platform for anyone to use, share, or build their own analysis tools. The community is friendly and welcoming to new users, and a
-a special forum for asking questions is also set up on the site (think StackOverflow, but iPlant related).
+Beyond storage space and computing power, CyVerse also provides an open-source platform for anyone to use, share, or build their own analysis tools. The community is friendly and welcoming to new users, and a
+a special forum for asking questions is also set up on the site (think StackOverflow, but CyVerse related).
 
-Admittedly, the authors of this site have not used all of the tools iPlant has to offer, but others are welcome to add their own tutorials for certain topics.
+Admittedly, the authors of this site have not used all of the tools CyVerse has to offer, but others are welcome to add their own tutorials for certain topics.
 
-#This site largely focuses on four of the iPlant services:
+#This site largely focuses on four of the CyVerse services:
 *	_[Data Store:](http://www.iplantcollaborative.org/ci/data-store)_ As you can likely guess, this is where everyone has access to their own personal storage space (up to 2 TB per person) along with
 community data which can be used for sample analyses 
 *	_[Discovery Environment:](http://www.iplantcollaborative.org/ci/discovery-environment)_ Not only ties in with the Data Store, but also hosts a wide variety of scientific applications that you may use freely, either
