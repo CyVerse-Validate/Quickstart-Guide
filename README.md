@@ -1,6 +1,6 @@
 # Quickstart-guide
 The tutorial for guiding one through the Validate workflow:
-* [An introduction to Iplant Collaborative](docs/Intro to Iplant.md)
+* [An introduction to Iplant Collaborative](docs/Intro to CyVerse.md)
 * [Setting up Accounts](docs/Account-setup.md)
 * [Accessing Atmosphere](docs/Validate on Atmosphere.md)
 * [Accessing Stampede](docs/Stampede-guide.md)
