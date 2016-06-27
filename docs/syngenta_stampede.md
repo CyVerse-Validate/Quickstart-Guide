@@ -20,9 +20,23 @@ For full documentation for Stampede user access, please see [this link](https://
 
 ## 2. Downloading Validate
 
+Activate Git module
+~~~
+module load git
+~~~
+
+Clone Validate into home directory
+~~~~
+git clone -b Developing-Release https://github.com/CyVerse-Validate/Validate.git
+~~~~
+
 
 ## 3. Accessing Syngenta data set
 
+
+## 4. Submitting jobs using SLURM
+
+https://portal.tacc.utexas.edu/user-guides/stampede#running
 
 # Using Agave:
 
