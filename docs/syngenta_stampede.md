@@ -1,11 +1,15 @@
 # Tutorial for running Validate on Stampede using a sample data set.
 
-- Accessing Stampede
+## Using Agave:
 
-- Cloning from git
+The Agave API provides a set of CLI tools for accessing the Cyverse data store and running apps on Stampede. Comprehensive instructions for configuring your client may be found [here](https://github.com/iPlantCollaborativeOpenSource/cyverse-sdk).
 
-- Syngenta data w/ wget
+## Downloading from github
 
-- Submitting a job to SLURM
+* Cloning from git
 
-- Working w/ outputs
+* Syngenta data w/ wget
+
+* Submitting a job to SLURM
+
+* Working w/ outputs
