@@ -9,7 +9,7 @@ of the other pages in this repository or the [TACC User Guide](https://portal.ta
 
 For those of you who are new to the [Stampede system](https://portal.tacc.utexas.edu/user-guides/stampede), first of all, congratulations on gaining access to one of the most powerful computers on Earth! 
 We hope that Stampede will be useful in whatever research you are conducting. Before you start, please make sure that all your accounts are in place.
-To check which accounts you need, refer to the [Accounts Setup page.](https://github.com/UNCW-iPlant/Quickstart-guide/blob/master/docs/Account-setup.md) 
+To check which accounts you need, refer to the [Accounts Setup page.](https://github.com/CyVerse-Validate/Quickstart-Guide/blob/master/docs/Account-setup.md) 
 Also, using Stampede requires at least a basic familiarity with Linux commands and the command line interface (CLI), so if you are lacking there, please consult this
 [Linux cheat sheet](http://linoxide.com/images/linux-cheat-sheet-612x792.png) or the [Software Carpentry shell tutorials](http://swcarpentry.github.io/shell-novice/)
 
@@ -17,13 +17,13 @@ Also, using Stampede requires at least a basic familiarity with Linux commands a
 
 While the Stampede shell *does* operate under a Linux operating system (OS) and runs bash commands, Stampede is slightly different from a typical Linux terminal.
 How so? In one sense, Stampede has many capabilities beyond what a typical Linux shell can do since it is essentially a large compute cluster rather than a standalone computer; 
-however, Stampede is also run by a set of administrators, so it is not an entirely isolated computing environment like the iPlant Collaborative's Atmosphere computing environment is. 
+however, Stampede is also run by a set of administrators, so it is not an entirely isolated computing environment like CyVerse's Atmosphere computing environment is. 
 Some particular differences are outlined below.
 
 1) **Stampede does not allow for root user access for running commands!** The Stampede cluster hosts thousands of users per day on a not-so-isolated computing environment with high processing power; 
 giving everyone access to the `sudo` command or the ability to log in as a root user would inevitably cause disaster on the machine. Hence, only the administrators have root access to most of the files.
 While you are able to install and change environmental variables for your particular allocation, universal changes are not allowed. By extension, this means that any programming packages or modules 
-(e.g. a Python module or an R package) cannot be installed on a permanent location. These packages can be accessed _on your allocation_, however, by changing the PYTHONPATH environmental variable and installing. Furthermore, to gain access to the iPlant Data Store, you will need to request permission from TACC, [ideally using a consulting ticket to contact the administrators.](https://portal.tacc.utexas.edu/tacc-consulting)
+(e.g. a Python module or an R package) cannot be installed on a permanent location. These packages can be accessed _on your allocation_, however, by changing the PYTHONPATH environmental variable and installing. Furthermore, to gain access to the CyVerse Data Store, you will need to request permission from TACC, [ideally using a consulting ticket to contact the administrators.](https://portal.tacc.utexas.edu/tacc-consulting)
 
 2) **Stampede uses SLURM for batch processing in addition to basic Linux commands.** Information about SLURM can be found [here](https://computing.llnl.gov/linux/slurm/). If there's one thing that will get the TACC admins on your case, it's running time-consuming operations on the login node 
 (i.e. your location when you first log in). The login node should only be used for small, basic operations that won't take more than a few minutes. Otherwise the operation will borrow from other compute nodes
