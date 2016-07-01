@@ -1,6 +1,13 @@
+> Estimated time to complete this tutorial is ~2 hours
+
+> Prior knowledge needed - Basic bash command familiarity, terminal use familiarity, accessing stampede
+
+> Tools needed - Computer, internet access, TACC allocation or Agave API on local machine
+
+
 # Tutorial for running Validate using a sample data set.
 
-This guide assumes you will be using Stampede to run the workflow. Validate may be ran on your own hardware by cloning from our github or setting up Agave locally.
+This guide assumes you will be using Stampede to run the workflow. Validate may be ran on your own hardware by cloning from our github or setting up Agave locally (INSERT LINK TO QUICKERSTART GUIDE WHEN ADDED TO THIS REPOSITORY).
 
 ## 1. Accessing Stampede
 
