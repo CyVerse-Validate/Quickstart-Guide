@@ -18,6 +18,11 @@ Next, set up an account with the Extreme Science and Engineering Discovery Envir
 
 Finally, to get access to the Agave API, you must request an allocation from XSEDE. This allocation will give you access to the actual compute resources on Stampede and give the Stampede system to "bill" you, so to speak, for any jobs run on said system. For example, staff at CyVerse have access to the "CyVerse" project. To request a standard XSEDE allocation, follow [the step-by-step instructions found here.](https://portal.xsede.org/allocation-request-steps) If you are a staff member at CyVerse, send a message to support@CyVerse.org to request access to the "CyVerse" allocation. Getting access may take a day or two, but you will know for sure upon trying out Stampede for yourself. **Note that you will not immediately receive a notification upon getting access. The only way to know for sure is to try it out!**
 
+<a name="Windows">
+###Note to access Agave or Stampede you will need a terminal which can pose a problem if you are running a Windows operating system
+To solve this problem you should follow the tutorials for accessing a virtual machine i.e. an [atmosphere image](http://www.cyverse.org/atmosphere) which will grant you access to a terminal and allow you to follow along with these tutorials for the validate workflow.</a>
+
+
 #Accessing Stampede
 To access Stampede, you may use a number of different SSH clients, depending on your operating system:
 
