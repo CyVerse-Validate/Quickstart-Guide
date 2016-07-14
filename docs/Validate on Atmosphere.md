@@ -11,7 +11,7 @@ To access our atmosphere image.
   - Once in search for Validate 0.9
   - Click launch
   - It will take a moment to setup and will eventually say ready
-  - When ready enter the ip address into VNC followed by a ":1" for example "123.456.78.910:1"
+  - When ready enter the ip address into VNC (or your ssh emulator of choice) followed by a ":1" for example "123.456.78.910:1"
   - Click connect and you will be prompted for a user name and password which is your cyverse login
   - Once logged in you will have access to a terminal, as well as, a virtual machine with all the software for the valide project installed
 
