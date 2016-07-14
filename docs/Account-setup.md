@@ -10,9 +10,9 @@ Before you can get started analyzing your [GWAS tools](https://en.wikipedia.org/
 
 First, and most importantly, you will need an CyVerse account which can be obtained [here.](https://user.cyverse.org/register/) Please note that the CyVerse account creation requires some kind of affiliation with a university or company to be completed.
 
-Now that you have created an CyVerse account, you have access to both the Data Store and the Discovery Environment! As the name implies, the Data Store is the recommended place to hold most of your data, as each personal folder can hold up to 100 GB by default. If you need more space, you may fill out [this form](http://www.cyverse.org/content/increase-your-data-store-allocation) 
+Now that you have created an CyVerse account, you have access to both the Data Store and the Discovery Environment! As the name implies, the Data Store is the recommended place to hold most of your data, as each personal folder can hold up to 100 GB by default. If you need more space, you may fill out [this form](http://www.cyverse.org/content/increase-your-data-store-allocation) To get a personal folder increase of up to 1 TB. 
 
-To get a personal folder increase of up to 1 TB. From here, you will want to request access to the Atmosphere cloud computing services. To do so, simply email support@CyVerse.org. Somethiong along the lines of "I would like access to atmosphere for [your login]" should do just fine.
+From here, you will want to request access to the Atmosphere cloud computing services. To do so, simply email support@CyVerse.org. Somethiong along the lines of "I would like access to atmosphere for [your login]" should do just fine.
 
 To use the Validate Workflow on Stampede, you will need a few more accounts. First, set up an account with the Texas Advanced Computing Center (TACC) [through this page.](https://portal.tacc.utexas.edu/account-request) Like the CyVerse account, TACC requires an institution to be named that you are affiliated with. Beyond that, the registration requires the usual information along with an email address. Also, unless you are a professor or in charge of a collaborative project at your company/institution, simply list the PI option near the end of the application as *Ineligible.*
 
