@@ -20,7 +20,7 @@ Finally, to get access to the Agave API, you must request an allocation from XSE
 
 <a name="Windows">
 ###Note to access Agave or Stampede you will need a terminal which can pose a problem if you are running a Windows operating system
-To solve this problem you should follow the tutorials for accessing a virtual machine i.e. an [atmosphere image](http://www.cyverse.org/atmosphere) which will grant you access to a terminal and allow you to follow along with these tutorials for the validate workflow.</a>
+To solve this problem you should follow the tutorials for accessing a virtual machine we have setup for the validate workflow i.e. an [atmosphere image](Validate on Atmosphere.md) which will grant you access to a terminal and allow you to follow along with these tutorials for the validate workflow.</a>
 
 
 #Accessing Stampede
