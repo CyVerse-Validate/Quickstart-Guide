@@ -65,6 +65,6 @@ For the multivariate mixed model, the only additional command line argument requ
 * **-n:** One or more integers separated by spaces; indicates which phenotype values in the phenotype file (whether PLINK binary or BIMBAM format) are included in the association analysis.
 
 ####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/atmman/Validate+Workflow+v0.7#ValidateWorkflowv0.7-GEMMA)<br></br>
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/GEMMA)<br></br>
 [User Manual](www.xzlab.org/software/GEMMAmanual.pdf)<br></br>
 
