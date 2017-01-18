@@ -8,9 +8,9 @@
 
 **The program requires a minimum of three files to function:** 
 
-1. A PEDMAP set of files
+1. A [PEDMAP](http://pngu.mgh.harvard.edu/~purcell/plink/data.shtml) set of files
 2. A phenotype file corresponding to the PEDMAP set
-3. A set of PLink formatted files to compute the genetic similarity matrix decomposition. This does not need to be different from number 1. 
+3. A set of [PLINK](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml) formatted files to compute the genetic similarity matrix decomposition. This does not need to be different from number 1. 
 
 **The input flags you would use are as follows:**
 * **-file :** Denotes the file name for the PLINK .ped/.map files
@@ -29,6 +29,6 @@ An example of executing the FaST-LMM program might look like so:
 `fastlmmc -verboseOutput -bfile toydata -pheno toydata.phe.txt -covar toydata.covar.txt -out MyResults.csv`
 
 ####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/atmman/FaST-LMM.Py+v2.02+Tutorial)<br></br>
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/pages/viewpage.action?pageId=12884250)<br></br>
 [User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)<br></br>
 [Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)
