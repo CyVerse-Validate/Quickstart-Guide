@@ -29,6 +29,6 @@ An example of executing the FaST-LMM program might look like so:
 `fastlmmc -verboseOutput -bfile toydata -pheno toydata.phe.txt -covar toydata.covar.txt -out MyResults.csv`
 
 ####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/pages/viewpage.action?pageId=12884250)<br></br>
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/FaST-LMM)<br></br>
 [User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)<br></br>
 [Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)
