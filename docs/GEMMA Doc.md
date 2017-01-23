@@ -66,5 +66,5 @@ For the multivariate mixed model, the only additional command line argument requ
 
 ####**Additional information** 
 [Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/GEMMA)<br></br>
-[User Manual](www.xzlab.org/software/GEMMAmanual.pdf)<br></br>
+[User Manual](http://www.xzlab.org/software/GEMMAmanual.pdf)<br></br>
 
