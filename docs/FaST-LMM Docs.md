@@ -33,4 +33,4 @@ An example of executing the FaST-LMM program might look like so:
 [User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)<br></br>
 [Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)
 
-[Back to Workflow Documentation](../workflow documentation.md) | [Next: GEMMA](GEMMA Doc.md)
+[Back to Workflow Documentation](workflow documentation.md) | [Next: GEMMA](GEMMA Doc.md)
