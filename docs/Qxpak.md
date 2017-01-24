@@ -88,4 +88,6 @@ A sample code with the wrapper used would look like…
 ####**Additional information** 
 [Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Qxpak)<br></br>
 [User Manual](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)<br></br>
-[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/qxpak)
+[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/qxpak)<br></br>
+
+[Back to Workflow Documentation](workflow documentation.md) | [Next: PLINK](PLINK.md)
