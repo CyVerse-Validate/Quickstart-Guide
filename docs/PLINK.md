@@ -143,4 +143,7 @@ Any of these analyses outputs may be run through Winnow and therefore are compat
 
 [Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/DEapps/PLINK)<br></br>
 [PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)<br></br>
-[Sample data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE) (WARNING: Very large datasets)
+[Sample data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE) (WARNING: Very large datasets)<br></br>
+
+
+[Back to Workflow Documentation](workflow documentation.md) | [Next: Winnow](Winnow.md)
