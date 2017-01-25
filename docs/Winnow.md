@@ -35,4 +35,4 @@ For the --kttype argument, the two possible options are "OTE" or "FGS." The "OTE
 [Sample Data](http://datacommons.cyverse.org/browse/iplant/home/shared/iplantcollaborative/example_data/Validate/Validate_Test_Data)<br></br>
 
 
-[Back to PLINK](PLINK.md) | [Next: Demonstrate](Demonstrate.md)
+[Back to PLINK](PLINK.md) | [Additional: Winnow Development](Winnow develop.md) | [Next: Demonstrate](Demonstrate.md)
