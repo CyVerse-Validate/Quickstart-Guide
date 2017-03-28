@@ -17,8 +17,8 @@ If you have your own data prepared and in the appropriate format, please see [th
 * 1. Setting up Agave
 * [2. Simulation with Alphasim](docs/alphasim.md)
 * 3. GWAS tools
-* 4. Winnow
-* 5. Demonstrate
+* [4. Winnow](docs/Winnow.md)
+* [5. Demonstrate](docs/Demonstrate.md)
 
 ## Old Workflow Guide:
 
