@@ -1,6 +1,6 @@
 ## Running Validate
 
-One of the key advantages of the Validate workflow is that it allows for seamless integration into the [Cyverse / TACC](docs/Intro to CyVerse.md) infrastructure. Rather than running computationally demanding tasks on your own hardware or struggling with large file management, you can Validate in confidence using high-speed computing systems such as [Stampede](docs/Stampede-guide.md), the Discovery Environment, and [Atmosphere](docs/Validate on Atmosphere.md).
+One of the key advantages of the Validate workflow is that it allows for seamless integration into the [Cyverse / TACC](docs/Intro_to_CyVerse.md) infrastructure. Rather than running computationally demanding tasks on your own hardware or struggling with large file management, you can Validate in confidence using high-speed computing systems such as [Stampede](docs/Stampede-guide.md), the Discovery Environment, and [Atmosphere](docs/Validate on Atmosphere.md).
 
 Please see [this guide](docs/Account-setup.md) for information on requesting access to these resources.
 
