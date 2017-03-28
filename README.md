@@ -1,6 +1,6 @@
 ## Running Validate
 
-One of the key advantages of the Validate workflow is that it allows for seamless integration into the [Cyverse / TACC](docs/IntrotoCyVerse.md) infrastructure. Rather than running computationally demanding tasks on your own hardware or struggling with large file management, you can Validate in confidence using high-speed computing systems such as [Stampede](docs/Stampede-guide.md), the Discovery Environment, and [Atmosphere](docs/ValidateonAtmosphere.md).
+One of the key advantages of the Validate workflow is that it allows for seamless integration into the [Cyverse / TACC](docs/Intro_to_CyVerse.md) infrastructure. Rather than running computationally demanding tasks on your own hardware or struggling with large file management, you can Validate in confidence using high-speed computing systems such as [Stampede](docs/Stampede-guide.md), the Discovery Environment, and [Atmosphere](docs/Validate_on_Atmosphere.md).
 
 Please see [this guide](docs/Account-setup.md) for information on requesting access to these resources.
 
@@ -24,10 +24,10 @@ If you have your own data prepared and in the appropriate format, please see [th
 
 [Workflow Guide](docs/workflow documentation.md) 
 
-[Working with your own Functions](docs/Yourfunctions.md)
-[Working with your own Simulations](docs/Yoursims.md)
+[Working with your own Functions](docs/Your_functions.md)
+[Working with your own Simulations](docs/Your_sims.md)
 
-[Further Winnow Development](docs/Winnowdevelop.md)
+[Further Winnow Development](docs/Winnow_develop.md)
 [Docker Tutorial](docs/docker_info/Docker_Tutorial.md)
 
 
