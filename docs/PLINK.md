@@ -1,4 +1,4 @@
-#PLINK: An Open-Source Whole Genome Association Analysis Toolset
+# PLINK: An Open-Source Whole Genome Association Analysis Toolset
 
 *(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)*
 
@@ -10,14 +10,14 @@ In the context of the Validate Workflow, PLINK is useful for handling both linea
 Though PLINK's analysis algorithms may not be quite as thorough as other mixed model software's, 
 it is a versatile GWAS (genome wide association studies) tool for handling dosage analysis, genotype-environment interactions, epistasis, and data management.
 
-##Input File Formats
+## Input File Formats
 
 **NOTE:** For most any type of command you run in PLINK, the program will initially try and connect to the Internet to download the latest version of the software. 
 Because this process is often unnecessary and time-consuming, we recommend using the `--noweb` flag in each of your commands to tell PLINK not to update.
 
 The file formats PLINK uses for genotype data fall into several different groups:
 
-####**PED/MAP files** 
+#### **PED/MAP files** 
 ------
 Standard files with .ped and .map extensions detailing the genotype information of an individual or a group of individuals. The PED file is delimited by spaces or tabs, and the first six columns of a PED file must correspond to the following: 
 *Family ID*, *Individual ID*, *Paternal ID*, *Maternal ID*, *Sex*, and *Phenotype.* The MAP file is a description of each genetic marker, and this file must have exactly 4 columns:
@@ -33,7 +33,7 @@ Alternatively, if the PED and MAP files have different names, use these commands
 
 If certain columns of the PED files are missing, the flags `--no-parents`, `--no-sex`, and `--no-pheno` may be used to denote PED files without the paternal and maternal IDs, sex, or phenotype respectively.
 
-####**BED/BIM/FAM files** 
+#### **BED/BIM/FAM files** 
 ------
 Binary equivalents of the PED/MAP files. Because of the conversion to binary, these files take up far less storage space and can be more efficiently loaded than an equivalent PED/MAP set would. 
 Furthermore, do not attempt to read the BED file; it is a compressed file and a text editor will only show strange characters when opening the BED file. 
@@ -44,7 +44,7 @@ To run BED/BIM/FAM files, use this commmand:
 
   `plink --bfile <binary dataset name, sans extension>`
 
-####**TPED/TFAM files** 
+#### **TPED/TFAM files** 
 ------
 These files represent a transposed fileset. 
 The first 4 columns of a TPED file are the same as a standard 4-column MAP file. Then, all genotypes are listed for all individuals for each particular SNP on each line. 
@@ -60,7 +60,7 @@ In some cases, PLINK also supports covariates in a given dataset. A covariate fi
 
   `plink --file <dataset> --covar <covariate file, plus extension>`
 
-##File Format Conversion
+## File Format Conversion
 
 Depending on your purpose for your data, occasionally conversion between PLINK formats may be necessary. 
 Fortunately, PLINK is very efficient in this regard, and even extremely large datasets can be converted in a reasonable amount of time.
@@ -83,7 +83,7 @@ Finally, to convert a binary or transposed file set back to its original PED/MAP
 
   `plink --bfile or --tfile <dataset name> --recode --out <new dataset name>`
 
-##Data Analysis
+## Data Analysis
 
 PLINK is also capable of running many types of basic quantitative analyses including epistasis, dosage analysis, and meta-analysis. For the purposes of this tutorial, however, we will only focus on the three algorithms for quantitative trait association.<br></br> 
 **First**<br></br>
@@ -141,9 +141,10 @@ For both of these options, the standard columns in the output files will be the 
 
 Any of these analyses outputs may be run through Winnow and therefore are compatible with the rest of the Validate Workflow (so long as a known-truth file is available as well).
 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/DEapps/PLINK)<br></br>
-[PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)<br></br>
-[Sample data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE) (WARNING: Very large datasets)<br></br>
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/DEapps/PLINK)  
 
+[PLINK documentation](http://pngu.mgh.harvard.edu/~purcell/plink/index.shtml)  
 
-[Back to Workflow Documentation](workflow\ documentation.md) | [Next: Winnow](Winnow.md)
+[Sample data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/syngenta_sim/PEDMAP_DE) (WARNING: Very large datasets)  
+
+[Back to Workflow Documentation](workflow_documentation.md) | [Next: Winnow](Winnow.md)
