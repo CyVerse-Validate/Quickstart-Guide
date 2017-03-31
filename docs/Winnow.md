@@ -30,7 +30,7 @@ Other possible arguments include:
 
 For the --kttype argument, the two possible options are "OTE" or "FGS." The "OTE" format represents "Only Truth and Effect," meaning that only those SNPs with significant effects along with the effect size of those significant SNPs are included in the known-truth file. The "FGS" format means "Full Genome Set," meaning that all SNPs and effects are included.  
 
-####**Additional information** 
+#### **Additional information** 
 [Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Winnow)<br></br>
 [Sample Data](http://datacommons.cyverse.org/browse/iplant/home/shared/iplantcollaborative/example_data/Validate/Validate_Test_Data)<br></br>
 
