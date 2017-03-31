@@ -30,6 +30,9 @@ An example of executing the FaST-LMM program might look like so:
 
 #### **Additional information** 
 [Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/FaST-LMM)  
+
 [User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)  
+
 [Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)  
+
 [Back to Workflow Documentation](workflow\ documentation.md) | [Next: GEMMA](GEMMA\ Doc.md)
