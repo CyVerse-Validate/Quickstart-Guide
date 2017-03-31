@@ -22,12 +22,10 @@ If you have your own data prepared and in the appropriate format, please see [th
 
 ## Old Workflow Guide:
 
-[Workflow Guide](docs/workflow_documentation.md) 
+[Workflow Guide](docs/workflow_documentation.md)  
 
-[Working with your own Functions](docs/Your_functions.md)
-[Working with your own Simulations](docs/Your_sims.md)
+[Working with your own Functions](docs/Your_functions.md)  
+[Working with your own Simulations](docs/Your_sims.md)  
 
-[Further Winnow Development](docs/Winnow_develop.md)
-[Docker Tutorial](docs/docker_info/Docker_Tutorial.md)
-
-
+[Further Winnow Development](docs/Winnow_develop.md)  
+[Docker Tutorial](docs/docker_info/Docker_Tutorial.md)  
