@@ -92,4 +92,4 @@ These have default settings but can be changed by adding the argument after the 
 `python demonstrate.py --verbose --dir ~/Documents/Dem2InputFiles --output ~/Documents/Dem2Output --settings ~/Documents/Dem2InputFiles/winnowoutput.param demonstrate2 --postitle TPbyFP --errortitle AUCbyMAE --aucmin 0 --aucmax 1.5 --maemin 0 --maemax 2.5`
 
 
-[Back to Winnow](Winnow.md) | [Next: FaST-LMM Docs](FaST-LMM_Docs.md)
+[Back to Winnow](Winnow.md) | [Back to README](../README.md)
