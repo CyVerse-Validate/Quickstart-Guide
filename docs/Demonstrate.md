@@ -1,4 +1,4 @@
-#Demonstrate
+# Demonstrate
 
 Demonstrate is the final step in the Validate known-truth pipeline for iPlant Collaborative. 
 Using output from Winnow, it produces a set of graphics showing differences in a GWAS/QTL applications performance under varying heritability and population structure. However,
@@ -6,7 +6,7 @@ Demonstrate also functions without the need for heritability or population struc
 
 The function you will want to use depends on what type of data you have:
 
-###Data with Heritability and Population Structure Specified 
+### Data with Heritability and Population Structure Specified 
 If you want to visualize differences in your data based on heritability or population structure, you'll want to use the
 original function Demonstrate. To run Demonstrate, type `R` on your terminal or command line to open the R console. From there use:
 
@@ -20,7 +20,7 @@ In this function, dir represents the directory where all Winnow output is stored
 on the mean absolute error (MAE) and area under the receiver operator curve (AUC) across varying levels of heritability and/or population structure.
 The graphs are in pdf format.
 
-###Other data from Winnow
+### Other data from Winnow
 For other types of data, or if you're more interested in comparing GWAS tools than comparing data, you will want to use the Demonstrate2 function. 
 Before running it though, you will need to include the function in your global environment:
 
@@ -36,7 +36,7 @@ file. Finally, two plots based on true vs. false positives and mean absolute err
 can compare multiple GWAS analysis results on the same plot.
 
 
-#Demonstrate With Python
+# Demonstrate With Python
 
 The Python implementation of Demonstrate works similar to the original program and provides the same output. The most important difference is the syntax to run the program. 
 
@@ -57,11 +57,11 @@ To run Demonstrate with only these settings; note the only 2 _required_ settings
 
 `python demonstrate.py --verbose --dir ~/Documents/Dem2InputFiles --output ~/Documents/Dem2Output --settings ~/Documents/Dem2InputFiles/winnowoutput.param demonstrate2`
 
-###Extra Parameters
+### Extra Parameters
 
 These have default settings but can be changed by adding the argument after the mode (e.g. after "demonstrate")
 
-####Demonstrate
+#### Demonstrate
 
 * **--xauc** (or **-a**) to exclude the AUC by Population Structure and Heritability plot (not set _by default_)
 * **--auctitle** (or **-t**) to specify the AUC plot title ("Mean AUC by Population Structure and Heritability" _by default_)
@@ -72,11 +72,11 @@ These have default settings but can be changed by adding the argument after the 
 * **--structstring** (or **-u**) to secify the structure string found in the input data ("PheHasStruct", "PheNPStruct" _by default_)
 * **--structvalue** (or **-p**) to specify the structure value found in the input data (True, False _by default_)
 
-#####Run Example (Including all plots)
+##### Run Example (Including all plots)
 
 `python demonstrate.py --verbose --dir ~/Documents/DemInputFiles --output ~/Documents/DemOutput --settings ~/Documents/DemInputFiles/winnowoutput.param demonstrate --auctitle AUC --maetitle MAE --heritstrig _03_ _04_ _06_ --heritvalue 0.3 0.4 0.6 --structstring PheHasStruct PheNPStruct --structvalue True False`
 
-####Demonstrate2
+#### Demonstrate2
 * **--xpos** (or **-q**) to exclude the True Positives by False Positives plot (not set _by default_)
 * **--postitle** (or **-i**) to specify the True Positives by False Positives plot title ("True Positives by False Positives _by default_)
 * **--xerror** (or **-e**) to exclude the error plot (not set _by default_)
@@ -87,9 +87,9 @@ These have default settings but can be changed by adding the argument after the 
 * **--maemin** (or **-n**) to specify minimum axis value for the MAE plot (0 _by default_)
 * **--maemax** (or **-c**) to specify minimum axis value for the MAE plot (2.0 _by default_)
 
-#####Run Example (Including all plots)
+##### Run Example (Including all plots)
 
 `python demonstrate.py --verbose --dir ~/Documents/Dem2InputFiles --output ~/Documents/Dem2Output --settings ~/Documents/Dem2InputFiles/winnowoutput.param demonstrate2 --postitle TPbyFP --errortitle AUCbyMAE --aucmin 0 --aucmax 1.5 --maemin 0 --maemax 2.5`
 
 
-[Back to Winnow](Winnow.md) | [Next: Installing Your Functions](Your functions.md)
+[Back to Winnow](Winnow.md) | [Next: Installing Your Functions](Your\ functions.md)
