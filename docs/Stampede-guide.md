@@ -1,11 +1,11 @@
-#A Quick Guide to Stampede for Beginning Users
+# A Quick Guide to Stampede for Beginning Users
 
 **NOTE:** This guide is intended for users who are unfamiliar with the basics 
 of the Stampede supercomputer or only have a cursory knowledge of the system. 
 For more advanced documentation, please consult one
 of the other pages in this repository or the [TACC User Guide](https://portal.tacc.utexas.edu/user-guides/stampede).
 
-##Intro
+## Intro
 
 For those of you who are new to the [Stampede system](https://portal.tacc.utexas.edu/user-guides/stampede), first of all, congratulations on gaining access to one of the most powerful computers on Earth! 
 We hope that Stampede will be useful in whatever research you are conducting. Before you start, please make sure that all your accounts are in place.
@@ -13,7 +13,7 @@ To check which accounts you need, refer to the [Accounts Setup page.](https://gi
 Also, using Stampede requires at least a basic familiarity with Linux commands and the command line interface (CLI), so if you are lacking there, please consult this
 [Linux cheat sheet](http://linoxide.com/images/linux-cheat-sheet-612x792.png) or the [Software Carpentry shell tutorials](http://swcarpentry.github.io/shell-novice/)
 
-##Differences from Linux Terminal
+## Differences from Linux Terminal
 
 While the Stampede shell *does* operate under a Linux operating system (OS) and runs bash commands, Stampede is slightly different from a typical Linux terminal.
 How so? In one sense, Stampede has many capabilities beyond what a typical Linux shell can do since it is essentially a large compute cluster rather than a standalone computer; 
@@ -71,7 +71,7 @@ the `module spider` command to do so. For example, if you wish to search for a p
 
 A series of commands for running iPlant applications are also covered in the next section. 
 
-##Setting Up and Running Apps
+## Setting Up and Running Apps
 
 Regarding apps, through the Agave API, Stampede provides a number of scientific apps that may be combined with the full power of the supercomputer. Most of the apps deal with life sciences, and to see the full list of applications available, use
 the command `apps-list`. If you wish to submit an app of your own, you will need a few things set up in a folder either on Stampede or on the iPlant Data Store beforehand:
@@ -114,7 +114,7 @@ And that about covers it! You should now be able to navigate the Stampede system
 
 **Also, if you want a list of all available commands on Stampede under a certain umbrella (like apps or jobs), type `compgen -c <search term here>` (for example, `compgen -c 'apps' `)** 
 
-##Using the Workflow on Stampede
+## Using the Workflow on Stampede
 
 While the apps will be available through Agave in the near future, for now you are free to upload them from Github and run through batch processing. To upload from Github, take these steps:
 
@@ -132,4 +132,4 @@ Either way, you may run analyses through batch processing and SLURM commands. Fo
 Once the apps are available through Agave, you can just submit a job description like the example linked above to get things running. To submit your job description and get a job started, just
 use the `jobs-submit` command corresponding to whatever app you want to run. Make sure you have all of the outputs directed to the right place, along with the links to whatever input you may be using.
 
-[Back to Read Me](../README.md) | [Next: Workflow guide](workflow documentation.md)
+[Back to Read Me](../README.md) | [Next: Workflow guide](workflow_documentation.md)
