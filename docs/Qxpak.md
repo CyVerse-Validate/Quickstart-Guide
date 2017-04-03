@@ -1,17 +1,17 @@
-#Qxpak v.5
+# Qxpak v.5
 
 *(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)*
 
 
 >Qxpak is a package for versatile statistical genomics, specifically designed for sophisticated quantitative trait loci and association analyses. Multiple loci, multiple trait, infinitesimal genetic effects, imprinting, epistasis or sex linked loci can be fitted. The new version (v. 5) allows us, among other new features, to include either relationship matrices obtained with molecular information or user defined matrices that can be read from an input file. This feature can be used for genome selection or - more importantly - to correct for population structure in association studies. In crosses, two parental lines, not necessarily inbred, can be accommodated --<cite>[QxPak Manual](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)</cite>
 
-###**Inputs**
+### **Inputs**
 Qxpak normally requires four files: 
 
 1. parameter file with input details
 2. data file containing phenotypes and any effect that may be included in the model
 3. pedigree file with genotypes
-4.  marker file with genotypes.
+4. marker file with genotypes.
 
 
 
@@ -48,7 +48,7 @@ The format of these files is: row, column, value in space-delimited form like th
 **Haplotype File**
 Contains known haplotypes if any. The first record contains the name of the chromosome. Successive records include individual, order of markers where phases known. If several chromosomes are analyzed, the format should be repeated for each.
 
-###**Outputs**
+### **Outputs**
 
 **q.0**
 Contains running output that might be useful for, among other things, checking convergence.
@@ -65,7 +65,7 @@ Z files contain the IDB probabilities or SNP configurations.
 **Other Output Files**
 There are numerous other undocumented output files.
 
-###**Wrapper Script**
+### **Wrapper Script**
 There is also a wrapper script available [here](https://pods.iplantcollaborative.org/wiki/download/attachments/8406442/qxpakwrapper.py?version=1&modificationDate=1341604484000&api=v2) and also linked on the Qxpak [wikipage](https://pods.iplantcollaborative.org/wiki/display/DEapps/Qxpak).
 This allows the user to write in the parameters directly into the command line without having to edit the parameter file repeatedly. 
 
@@ -85,9 +85,11 @@ A sample code with the wrapper used would look like…
 
     qxpakwrapper.py -p parameterFile.par -d dataFile.dat -g pedigreeFile.ped -m markerFile.mkr -i userInverse.inverse -t UserDirect.direct -h haplotypes.haplo -o results.csv
 
-####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Qxpak)<br></br>
-[User Manual](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)<br></br>
-[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/qxpak)<br></br>
+#### **Additional information** 
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Qxpak)  
 
-[Back to Workflow Documentation](workflow documentation.md) | [Next: PLINK](PLINK.md)
+[User Manual](http://nce.ads.uga.edu/~ignacy/numpub/blupf90/docs/qxpak.pdf)  
+
+[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/qxpak)  
+
+[Back to Workflow Documentation](workflow_documentation.md) | [Next: PLINK](PLINK.md)

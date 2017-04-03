@@ -14,20 +14,18 @@ From there, you may wish to try [simulating a data set using AlphaSim](docs/alph
 
 If you have your own data prepared and in the appropriate format, please see [this tutorial](docs/datastore.md) for accessing the CyVerse data store from the command line.
 
-* 1. Setting up Agave
-* [2. Simulation with Alphasim](docs/alphasim.md)
-* 3. GWAS tools
-* [4. Winnow](docs/Winnow.md)
-* [5. Demonstrate](docs/Demonstrate.md)
+1. Setting up Agave
+2. [Simulation with Alphasim](docs/alphasim.md)
+3. GWAS tools
+4. [Winnow](docs/Winnow.md)
+5. [Demonstrate](docs/Demonstrate.md)
 
 ## Old Workflow Guide:
 
-[Workflow Guide](docs/workflow_documentation.md) 
+[Workflow Guide](docs/workflow_documentation.md)  
 
-[Working with your own Functions](docs/Your_functions.md)
-[Working with your own Simulations](docs/Your_sims.md)
+[Working with your own Functions](docs/Your_functions.md)  
+[Working with your own Simulations](docs/Your_sims.md)  
 
-[Further Winnow Development](docs/Winnow_develop.md)
-[Docker Tutorial](docs/docker_info/Docker_Tutorial.md)
-
-
+[Further Winnow Development](docs/Winnow_develop.md)  
+[Docker Tutorial](docs/docker_info/Docker_Tutorial.md)  

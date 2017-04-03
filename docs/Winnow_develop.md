@@ -1,4 +1,4 @@
-#A Small Guide to Further Winnow Development
+# A Small Guide to Further Winnow Development
 
 Because of the structure of the Winnow program, it is easy to add in any 
 additional performance metrics that you may wish to include in your final analysis. This documentation is intended to provide a comprehensive manual of how to add to Validate and/or alter Validate in any way to provide a more useful way to test genotype to phenotype association methods with known-truth data sets. 
@@ -35,7 +35,7 @@ You will also need to understand the following five objects from the program to 
 | scoreColumn   | This list is the list of generated "scores" reflecting the score assigned to that SNP from the GWAS application. For example, this is the column that would be generally indicated for P-values                                                                                                                                   |
 | threshold     | This is a scalar quantity designed for some metrics that require a threshold such as True Positive Rate, for example.                                                                                                                                                                                                             |
 
-##Adding a performance metric
+## Adding a performance metric
 
 Adding an additional fit statistic to the list of outputs is fortunately very straightforward. As a basic example, if we wanted to include a correlation value:
 
@@ -55,7 +55,7 @@ def r(betaColumn, betaTrueFalse):
 You will need to include the function name—"r" in this case—and the function call—r(betaColumn, betaTrueFalse)—in the file. 
 Remember also that we are only changing the gwaswithBeta function, as we could not analyze a GWAS application that did not include SNP weights.
 
-##Adding a P-value adjustment function
+## Adding a P-value adjustment function
 
 If we wanted to include a Benjamini-Hochberg FDR adjustment:
 

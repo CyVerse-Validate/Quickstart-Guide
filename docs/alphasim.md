@@ -7,10 +7,10 @@ Prerequisites: Agave CLI, general knowledge of executing using Agave, Access to 
 
 Helpful Documentation
 
-Alphasim: http://www.alphagenes.roslin.ed.ac.uk/wp-content/uploads/AlphaSimManual/AlphaSim.html
-Alphasim parameter file: https://github.com/CyVerse-Validate/Stampede-Files/blob/master/AlphaSim-1.04/AlphaSimInputInformation.txt
+[Alphasim](http://www.alphagenes.roslin.ed.ac.uk/wp-content/uploads/AlphaSimManual/AlphaSim.html)  
+[Alphasim's parameter file](https://github.com/CyVerse-Validate/Stampede-Files/blob/master/AlphaSim-1.04/AlphaSimInputInformation.txt)
 
-##Locate / Open parameter file
+## Locate / Open parameter file
 
 You can download a sample parameter files from our repository. The parameter file allows you to pass commands into the AlphaSim software.
 Once you have access the parameter file, upload it to your Data Store. The default parameter file has specifications for running multiple generations for corn genetics.
@@ -58,7 +58,7 @@ https://github.com/CyVerse-Validate/Stampede-Files/blob/master/AlphaSim-1.04/get
 
 ## Convert to ped/map
 
-1. Download the merger.py from the github repository here (or if you have already installed Validate, it is included): https://github.com/CyVerse-Validate/Validate/tree/master/CurrentReleaseStable/Util_1/Merger
+1. Download the merger.py from the github repository [here](https://github.com/CyVerse-Validate/Validate/tree/master/CurrentReleaseStable/Util_1/Merger) (or if you have already installed Validate, it is included): 
 
 2. Run the merger with the AlphaSim outputs with the following commands from the directory where your AlphaSim output is located, where ALPHASIMPREFIX is the prefix of your job output:
 
@@ -70,7 +70,7 @@ This will yield ALPHASIMPREFIX.ped and ALPHASIMPREFIX.map in the directory speci
 
 ## Convert to bed/bim/fam
 
-1. Download plink from the github repository here (or if you have already installed Validate, it is included): https://github.com/CyVerse-Validate/Validate/blob/master/CurrentReleaseStable/GWAS_1/plink
+1. Download plink from the github repository [here](https://github.com/CyVerse-Validate/Validate/blob/master/CurrentReleaseStable/GWAS_1/plink) (or if you have already installed Validate, it is included): 
 
 2. Run Plink with the following command from the directory where your ped/map files are located:
 

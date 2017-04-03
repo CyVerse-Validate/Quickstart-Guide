@@ -1,10 +1,10 @@
-#Winnow
+# Winnow
 *(Links to sample data, and another tutorial are available at the bottom of this page)*
 
 >The bread-and-butter of the workflow, Winnow (formerly the eponymous Validate), is a Python-compatible known truth testing tool for genome wide association studies. Quite simply, Winnow is a tool that evaluates other tools. 
 Winnow requires output from a GWAS tool after analyzing a data set. Given the "known truth" of the original data set, Winnow outputs a series of fit statistics to determine the validity of the GWAS tool and whether or not it was truly useful in analyzing the data.
 
-###Winnow Guide
+### Winnow Guide
 
 On the _Validate Workflow v0.5_ Atmosphere instance, the main Winnow program, `winnow.py`, is located in the `/usr/bin` directory along with its modules. To see all of the possible options, type this command into the terminal/command line:
 
@@ -30,9 +30,9 @@ Other possible arguments include:
 
 For the --kttype argument, the two possible options are "OTE" or "FGS." The "OTE" format represents "Only Truth and Effect," meaning that only those SNPs with significant effects along with the effect size of those significant SNPs are included in the known-truth file. The "FGS" format means "Full Genome Set," meaning that all SNPs and effects are included.  
 
-####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Winnow)<br></br>
-[Sample Data](http://datacommons.cyverse.org/browse/iplant/home/shared/iplantcollaborative/example_data/Validate/Validate_Test_Data)<br></br>
+#### **Additional information** 
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/Winnow)  
 
+[Sample Data](http://datacommons.cyverse.org/browse/iplant/home/shared/iplantcollaborative/example_data/Validate/Validate_Test_Data)  
 
-[Back to PLINK](PLINK.md) | [Additional: Winnow Development](Winnow develop.md) | [Next: Demonstrate](Demonstrate.md)
+[Back to PLINK](PLINK.md) | [Additional: Winnow Development](Winnow_develop.md) | [Next: Demonstrate](Demonstrate.md)

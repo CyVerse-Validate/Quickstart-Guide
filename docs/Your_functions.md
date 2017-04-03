@@ -1,10 +1,10 @@
-#Installing your own functions
+# Installing your own functions
 
 Though the Validate Workflow—on both Atmosphere and Stampede—provides a number of options for GWAS analysis tools, you are
 also able to bring your own methods in for use. As long as the output from your function is in the proper style (*not* necessarily file format),
 then you can easily integrate it into the workflow.
 
-##Bringing in your own functions
+## Bringing in your own functions
 
 On Atmosphere and Stampede both, bringing in your own methods are not terribly difficult. 
 All you need is the source code, a terminal, and access to the rest of the Workflow.
@@ -33,7 +33,7 @@ Another column that may be included is:
 4) If you are aiming to make permanent your source code either on an Atmosphere instance or on Stampede, 
 you'll need to do another few things:
 
-###If on Atmosphere:
+### If on Atmosphere:
 The key thing you will need to do is move your source code/executable to a permanent location on the instance. 
 **Do not leave anything you want to save on the Desktop or your personal directory!** 
 Instead, it's recommended that you move everything either to the `usr` or `usr/bin` folder for imaging. 
@@ -43,7 +43,7 @@ Once you have everything moved to a permanent directory, simply go back to the A
 **NOTE:** Even after you fill out the image forms, do not terminate the instance immediately! Atmosphere will need to "take a picture" of your instance, which may take a few minutes.
 During that time, please keep your instance either *active* or *suspended.*
 
-##If on Stampede
+## If on Stampede
 Getting your app permanently, formally recognized on Stampede involves a bit more effort. 
 To list an app on Stampede, you'll need to go through the Agave API and the app submission process there. 
 To get started, you'll need to [set up the necessary accounts](Account-setup.md). 
@@ -51,4 +51,4 @@ From there, in addition to the source code, you will need a Javascript Object No
 For a more in-depth explanation of the requirements, please consult [this tutorial](https://github.com/iPlantCollaborativeOpenSource/iplant-agave-sdk)
 
 
-[Back to Read Me](../README.md) | [Next: Installing your simulations](Your sims.md)
+[Back to Read Me](../README.md) | [Next: Installing your simulations](Your_sims.md)

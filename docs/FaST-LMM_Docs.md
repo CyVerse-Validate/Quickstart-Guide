@@ -1,10 +1,10 @@
-#FaST-LMM
+# FaST-LMM
 
 *(Links to sample data, the user manual, and another tutorial are available at the bottom of this page)*
 
 >The main genome wide association studies tool that we have used, FaST-LMM stands for *Fa*ctored *S*pectrally *T*ransformed *L*inear *M*ixed *M*odels. It is a tool from Microsoft Research designed for analyses of very large data sets, and has been tested on data sets with over 120,000 individuals.
 
-##Running the Program
+## Running the Program
 
 **The program requires a minimum of three files to function:** 
 
@@ -28,9 +28,11 @@
 An example of executing the FaST-LMM program might look like so:
 `fastlmmc -verboseOutput -bfile toydata -pheno toydata.phe.txt -covar toydata.covar.txt -out MyResults.csv`
 
-####**Additional information** 
-[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/FaST-LMM)<br></br>
-[User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)<br></br>
-[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)
+#### **Additional information** 
+[Tutorial on iPlant confluence Wiki](https://pods.iplantcollaborative.org/wiki/display/TUT/FaST-LMM)  
 
-[Back to Workflow Documentation](workflow documentation.md) | [Next: GEMMA](GEMMA Doc.md)
+[User Manual](http://nbviewer.ipython.org/github/MicrosoftGenomics/FaST-LMM/blob/master/doc/ipynb/FaST-LMM.ipynb)  
+
+[Sample Data](http://mirrors.iplantcollaborative.org/browse/iplant/home/shared/iplantcollaborative/example_data/fastlmm)  
+
+[Back to Workflow Documentation](workflow_documentation.md) | [Next: GEMMA](GEMMA_Doc.md)
