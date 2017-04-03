@@ -24,4 +24,4 @@ One example of running Simulate would look like so:
 Note that here we have two subpopulations with 1000 individuals each. These individuals then have 3000 markers and three loci with effects. Those effect sizes are all equal at 0.2, and the population mean for both subpopulations is 2.7 (if no second mean is listed, the program will just duplicate the first mean). These populations will both evolve for 100 generations and the heritabity value of the phenotype is 0.25. Finally, the three output files will be moved to the desktop, all beginning with the word "Test."
 At the time of this writing, conversion to different formats will need to be done manually; however, exporting of data to other file formats will be an option in coming updates of the Simulate program.
 
-[Back to Workflow Documentation](.workflow\ documentation.md) | [Next: FaST-LMM](FaST-LMM\ Docs.md)
+[Back to Workflow Documentation](workflow_documentation.md) | [Next: FaST-LMM](FaST-LMM_Docs.md)
